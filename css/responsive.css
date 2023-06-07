@@ -1,0 +1,4063 @@
+/*common_css*/
+
+@media screen and (max-width:600px) {
+    .lab-inner-content>* {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+/*end*/
+
+
+/*login*/
+
+@media screen and (max-width:991px) {
+    .content_wrap02 {
+        position: unset;
+        transform: unset;
+        margin: 0px auto;
+        padding: 15px;
+        width: 600px;
+    }
+    .content_wrap02 .col-lg-6 {
+        margin-bottom: 50px;
+    }
+    h2.af_rotate {
+        display: none;
+    }
+    .content_wrap02 .form-group,
+    .content_wrap02 .form-group input,
+    input#password-field {
+        width: 100%;
+    }
+    label.label_common {
+        text-align: center;
+        display: block;
+    }
+    h2.af_rotate.displayAf_mob {
+        display: block;
+        top: unset;
+        z-index: 1;
+        clear: both;
+    }
+    .af_rotate.displayAf_mob:before {
+        top: unset;
+        bottom: 15px;
+        width: 85%;
+        transform: unset;
+    }
+    .af_rt {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .input_common {
+        width: 280px;
+    }
+    ul.socio_icons {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .content_wrap02 {
+        height: 700px;
+        overflow-y: auto;
+        position: inherit;
+        top: 40px;
+        right: unset;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1380px) {
+    form.login_form01 {
+        margin-top: 15px;
+    }
+    form.login_form01 .btn {
+        margin-top: 10px;
+    }
+    label.label_common {
+        margin-bottom: 15px;
+    }
+    a.af_anchor.pull-right {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    input#password-field {
+        margin-top: 20px;
+    }
+    .af_rotate {
+        margin-top: 0;
+    }
+    .af_rotate {
+        top: 247px;
+    }
+    .af_rotate:before {
+        width: 66%;
+    }
+}
+
+
+/* Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .wrapper_login {
+        overflow: hidden;
+    }
+    .content_wrap02 {
+        height: 380px;
+    }
+}
+
+
+/*login_END*/
+
+
+/*setting_ideas*/
+
+@media screen and (max-width:767px) {
+    .create_content.customcontss .text_content input,
+    .create_content.customcontss .text_content select {
+        width: 100%;
+    }
+    .af_searchbtn {
+        width: 100%;
+    }
+    .af_content_route ul.nav.nav-tabs {
+        flex-direction: column;
+    }
+    .btn_grp_af button {
+        width: 140px;
+        font-size: 14px;
+        height: 40px;
+        margin-bottom: 10px !important;
+    }
+}
+
+
+/*End_ideas*/
+
+
+/*landing_page*/
+
+
+/* mobile */
+
+@media only screen and (max-width: 767px) {
+    .link-nav-g {
+        flex-direction: column;
+        max-height: unset;
+    }
+    .nav-social-right {
+        margin-top: 15px;
+    }
+    .cont-head {
+        width: 100%;
+    }
+    ol.carousel-indicators {
+        bottom: 16%;
+    }
+    .footer-flow {
+        text-align: center;
+    }
+    .site-intro p {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: justify;
+    }
+    .navbar-brand {
+        padding: 5px 15px;
+    }
+    .comma-nav ul.nav.navbar-nav.navbar-right {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #nav-comma-g {
+        border: 0px;
+    }
+    .banner-content.carousel-caption {
+        padding: 20px;
+    }
+    .search-block {
+        width: 95%;
+        padding: 20px 15px;
+    }
+    #category,
+    #search-box {
+        width: 40%;
+        margin-bottom: 15px;
+    }
+    .tab-right p {
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .banner-content.carousel-caption {
+        width: 75%;
+    }
+    .ban-g .item img {
+        width: auto;
+        height: 600px;
+        max-width: unset;
+    }
+    .comma-nav {
+        max-height: unset;
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 320px) {
+    .banner-content.carousel-caption {
+        top: 10%;
+        padding: 15px;
+    }
+    .cont-head {
+        width: 100%;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .right-arrow {
+        width: 30px;
+        height: 30px;
+    }
+    .form-vali {
+        flex-direction: column;
+    }
+    #category,
+    #search-box {
+        width: 100%;
+        max-width: 100%;
+    }
+    .info-content h2 {
+        margin-top: 255px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    #category,
+    #search-box {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+    .nav-g .nav-pills li a {
+        padding: 0px 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 660px) {
+    #category,
+    #search-box {
+        width: 45%;
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 597px) {
+    .nav-g .nav-pills li a {
+        padding: 0px 5vw;
+    }
+}
+
+@media only screen and (max-width: 596px) and (min-width: 471px) {
+    .nav-g .nav-pills li a {
+        padding: 0px 3vw;
+    }
+}
+
+@media only screen and (max-width: 470px) and (min-width: 320px) {
+    .nav-g ul.nav.nav-pills li {
+        width: 45%;
+    }
+    .nav-g .nav-pills li a {
+        padding: 0px;
+    }
+}
+
+
+/*End_landing_page*/
+
+
+/*Register-Start*/
+
+@media only screen and (max-width: 1400px) and (min-width: 1100px) {
+    .reg-signup {
+        right: 5%;
+        padding: 20px 45px;
+        height: 570px;
+        max-width: 480px;
+    }
+    .reg-signup .flex {
+        padding: 15px 20px;
+    }
+    .reg-signup h2 {
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+    .reg-static-content {
+        padding: 20px 20px;
+        /* max-height: 355px; */
+        max-width: 400px;
+    }
+    #register_verification {
+        height: 590px;
+    }
+    #register_verification p {
+        margin: 30px 0px 15px 0px;
+    }
+    .resendOTP {
+        margin-bottom: 15px;
+    }
+    #register_payment {
+        padding: 20px 25px;
+        /* height: 360px; */
+        max-width: 430px;
+    }
+    #register_payment_freetrail {
+        height: 390px;
+        max-width: 470px;
+    }
+}
+
+@media only screen and (max-width: 1099px) and (min-width: 990px) {
+    .register-bg {
+        width: 35%;
+    }
+    .reg-signup {
+        right: 5%;
+        max-width: 410px;
+        padding: 20px 35px;
+        height: 600px;
+    }
+    .reg-static-content {
+        left: 22%;
+    }
+    .reg-signup .flex {
+        padding: 15px 20px;
+    }
+    #register_verification {
+        height: 600px;
+    }
+    #register_verification h2 {
+        margin-bottom: 30px;
+    }
+    #register_verification p {
+        margin: 20px 0px 15px 0px;
+    }
+    .resendOTP {
+        margin-bottom: 15px;
+    }
+    #register_payment {
+        padding: 10px 30px 20px 30px;
+        height: 385px;
+        max-width: 410px;
+    }
+    #register_payment .flex.sb {
+        padding: 15px 0px;
+    }
+    #register_payment_freetrail h2 {
+        margin-bottom: 25px;
+    }
+    #register_payment_freetrail {
+        height: 400px;
+        max-width: 430px;
+    }
+}
+
+@media only screen and (max-width: 989px) and (min-width: 768px) {
+    .register-bg {
+        width: 100%;
+        object-fit: cover;
+        height: 100vh;
+    }
+    .reg-signup {
+        top: 0;
+        bottom: 0;
+        left: unset;
+        right: 2%;
+        margin: auto;
+        max-width: 400px;
+        padding: 20px 20px;
+        height: 570px;
+    }
+    .reg-static-content {
+        left: 2%;
+        right: auto;
+    }
+    .reg-signup .flex {
+        padding: 15px 20px;
+    }
+    .reg-signup h2 {
+        margin-top: 0px;
+    }
+    #register_verification {
+        max-width: 440px;
+        height: 565px;
+        padding: 20px 30px;
+    }
+    #register_verification h2 {
+        margin-bottom: 30px;
+    }
+    #register_verification p {
+        margin: 20px 0px 15px 0px;
+    }
+    .resendOTP {
+        margin-bottom: 15px;
+    }
+    #register_payment {
+        padding: 25px 30px 20px 30px;
+        height: 375px;
+        max-width: 410px;
+    }
+    #register_payment .flex.sb {
+        padding: 15px 0px;
+    }
+    .free_trail {
+        font-size: 20px;
+    }
+    #register_payment_freetrail {
+        max-width: 370px;
+    }
+    #register_payment_freetrail .flex.sb {
+        padding: 15px 0px;
+    }
+    #register_payment_freetrail .reg_paynow,
+    #register_payment_freetrail .reg_cancel {
+        width: 140px;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    .register-bg {
+        width: 100%;
+        object-fit: cover;
+        height: 500px;
+    }
+    .reg-signup {
+        top: unset;
+        bottom: unset;
+        left: 0;
+        right: 0;
+        margin: 40px auto;
+        max-width: 400px;
+        padding: 20px 20px;
+        height: 570px;
+        position: relative;
+    }
+    .reg-static-content {
+        left: 0;
+        right: 0;
+    }
+    .reg-signup .flex {
+        padding: 15px 20px;
+    }
+    .reg-signup h2 {
+        margin-top: 0px;
+    }
+    .reg-static-content .flex:first-child {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+    .reg-static-content .flex:first-child img {
+        width: 40px;
+    }
+    .reg-static-content {
+        padding: 10px 20px;
+        max-width: 250px;
+        min-height: 285px;
+        position: relative;
+    }
+    .reg-static-content .flex:first-child h3 {
+        font-size: 26px;
+    }
+    .reg-static-details p {
+        font-size: 22px;
+    }
+    .reg-static-details {
+        height: 150px;
+    }
+    .reg-static-content .last-flex svg {
+        height: 150px;
+    }
+    .register-bg {
+        height: 360px;
+        display: none;
+    }
+    .register_container {
+        padding: 40px 0px 10px 0px;
+        background: url(../images/register_bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    #register_verification p {
+        font-size: 14px;
+        margin: 20px 0px 15px 0px;
+    }
+    #register_verification {
+        height: auto;
+    }
+    #register_payment h2 {
+        margin-bottom: 10px;
+    }
+    #register_payment p {
+        margin: 20px 0px 15px 0px;
+    }
+    #register_payment {
+        padding: 20px 30px;
+        height: 350px;
+        max-width: 370px;
+    }
+    #register_payment .reg_cancel,
+    #register_payment .reg_paynow {
+        width: 120px;
+        padding: 15px 10px;
+    }
+    #register_payment .flex.sb {
+        padding: 15px 10px;
+    }
+    #register_payment_freetrail h2 {
+        margin-bottom: 20px;
+    }
+    #register_payment_freetrail {
+        height: 355px;
+        max-width: 330px;
+    }
+    .free_trail {
+        font-size: 16px;
+        padding: 20px;
+    }
+    #register_payment_freetrail .flex.sb {
+        padding: 15px 0px;
+    }
+    #register_payment_freetrail .reg_paynow,
+    #register_payment_freetrail .reg_cancel {
+        width: 110px;
+        font-size: 15px;
+        padding: 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 320px) {
+    .reg-signup h2 {
+        font-size: 22px;
+    }
+    .reg-signup .flex input,
+    .reg-signup .flex select {
+        font-size: 16px;
+        line-height: unset;
+    }
+    .reg-signup {
+        width: 90%;
+        height: auto;
+        padding: 20px 15px;
+    }
+    .reg-signup .flex {
+        padding: 15px 10px;
+    }
+    .flex.otp input {
+        width: 25px;
+    }
+    .reg_cancel,
+    .reg_next,
+    .reg_paynow {
+        width: 120px;
+        font-size: 15px;
+        padding: 10px;
+    }
+    #register_verification {
+        padding: 20px;
+    }
+    #register_payment {
+        padding: 20px 15px;
+        height: 335px;
+    }
+    #register_payment .flex.sb {
+        padding: 15px 0px;
+        justify-content: space-around;
+    }
+    .free_trail {
+        font-size: 16px;
+        padding: 20px;
+    }
+    #register_payment_freetrail .flex.sb {
+        padding: 15px 0px;
+    }
+    #register_payment_freetrail .reg_paynow,
+    #register_payment_freetrail .reg_cancel {
+        width: 110px;
+        font-size: 15px;
+        padding: 10px 0px;
+    }
+}
+
+
+/*Register-End*/
+
+
+/*post idea and notification*/
+
+@media screen and (min-width:320px) and (max-width:375px) {
+    /* .modal-content,
+    .notification_main {
+        width: 295px;
+    } */
+    .notification_text {
+        width: 255px;
+    }
+    .notification_image .main_img {
+        width: 70px;
+        padding: 0px 17px 0px 8px;
+        height: 44px;
+    }
+    .notification_image h1 {
+        font-size: 12px;
+    }
+    .notification_paragraph h1 {
+        padding: 12px 18px 10px 20px;
+        font-size: 11px;
+    }
+    .notification_blue {
+        font-size: 13px;
+    }
+    img.close_img {
+        left: -27px;
+        padding: 7px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1380px) {
+    /* .modal-content {
+        width: 980px;
+        margin: 50px 20px;
+    } */
+    .payment_border {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    /* .modal-content {
+        width: 900px;
+        margin: 45px 45px;
+    } */
+}
+
+@media screen and (min-width:767px) and (max-width:990px) {
+    /* .modal-content {
+        width: 680px;
+        margin: 45px 45px;
+    } */
+    .summary_table {
+        width: 250px;
+    }
+    .payment {
+        width: 214px;
+    }
+    .payment_border {
+        width: 252px;
+    }
+    .payment_method h1 {
+        width: 250px;
+    }
+    .payment_btn {
+        width: 231px;
+    }
+    .madel_right {
+        padding: 31px 55px;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:766px) {
+    /* .modal-content {
+        width: 350px;
+        height: auto;
+        margin: 45px 42px;
+    } */
+    .madel_right {
+        padding: 30px 31px;
+    }
+    .payment {
+        width: 260px;
+    }
+    .payment_border {
+        width: 300px;
+    }
+    .card_number {
+        width: 240px;
+    }
+    .exp_date {
+        width: 109.5px;
+    }
+    .btn_pay {
+        margin: 30px 20px;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:424px) {
+    /* .modal-content {
+    width: 334px;
+    height: auto;
+    margin: 45px 20px;
+    } */
+    .madel_right {
+        padding: 31px 20px;
+    }
+    .card_number {
+        width: 240px;
+    }
+    .exp_date {
+        width: 90.5px;
+        padding: 0px 20px;
+    }
+    .btn_pay {
+        margin: 30px 20px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:374px) {
+    /* .modal-content {
+    width: 282px;
+    height: auto;
+    margin: 45px 20px; 
+    }*/
+    .summary_table {
+        width: 250px;
+    }
+    .payment_method h1 {
+        width: 250px;
+    }
+    .payment {
+        width: 214px;
+    }
+    .madel_right {
+        padding: 31px 20px;
+    }
+    .card_number {
+        width: 200px;
+    }
+    .madel_right h1 {
+        font-size: 16px;
+    }
+    .exp_date {
+        width: 90.5px;
+        padding: 0px 20px;
+    }
+    .btn_pay {
+        margin: 15px 30px;
+        font-size: 15px;
+        width: 140px;
+    }
+}
+
+
+/**/
+
+
+/*settings and messages*/
+
+@media (max-width: 767px) {
+    /* settings */
+    .setting-university {
+        margin-top: 20px;
+    }
+    .certificate-image {
+        margin: 20px 0px;
+    }
+    .certificate-image img {
+        height: auto;
+    }
+    .certificate-image {
+        padding-right: 0!important;
+        padding-left: 0px!important;
+        box-shadow: unset;
+    }
+    .setting-university .col-lg-5 {
+        padding-left: 5!important;
+        padding-right: 5!important;
+    }
+    .setting-university .col-lg-4 {
+        padding-left: 7!important;
+        padding-right: 10px!important;
+    }
+    .dw-right {
+        margin-left: initial;
+        margin-top: 20px;
+    }
+    .settings-page {
+        margin-top: 35px;
+    }
+    /* settings */
+    /* message */
+    .people-list {
+        width: 100%;
+    }
+    .chat {
+        width: 100%;
+    }
+    .people-list ul {
+        height: auto;
+    }
+    /* message */
+}
+
+
+/* end */
+
+@media only screen and (min-width:767px) and (max-width:991px) {
+    /* settings */
+    .setting-university {
+        margin-top: 20px;
+    }
+    .certificate-image {
+        margin: 20px 0px;
+    }
+    .certificate-image img {
+        height: auto;
+    }
+    .certificate-image {
+        padding-right: 0!important;
+        padding-left: 0px!important;
+        box-shadow: unset;
+    }
+    .setting-university .col-lg-5 {
+        padding-left: 5!important;
+        padding-right: 5!important;
+    }
+    .setting-university .col-lg-4 {
+        padding-left: 7!important;
+        padding-right: 10px!important;
+    }
+    .dw-right {
+        margin-left: initial;
+        margin-top: 20px;
+    }
+    .settings-page {
+        margin-top: 35px;
+    }
+    /* settings */
+    /* message */
+    .people-list {
+        width: 100%;
+    }
+    .chat {
+        width: 100%;
+    }
+    .people-list ul {
+        height: auto;
+    }
+    /* message */
+}
+
+
+/* end */
+
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    .setting-university {
+        margin-top: 30px;
+    }
+    /* message */
+    .people-list {
+        width: 45%;
+    }
+    .chat {
+        width: 55%;
+    }
+    /* message */
+}
+
+
+/* end */
+
+
+/**/
+
+
+/*Profile-page-Start*/
+
+@media only screen and (max-width: 768px) and (min-width: 320px) {
+    .profile_top,
+    #af_wrapper {
+        margin-bottom: 25px;
+    }
+    .profile_topRight {
+        padding: 0px;
+    }
+    .profile_btns .profile_cancel,
+    .profile_btns .profile_update {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 320px) {
+    .your_plan .row div {
+        width: 100%;
+        text-align: center;
+    }
+    .profile_current_plan {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .profile_current_plan .profile_upgrade {
+        margin-top: 15px;
+    }
+    .profile_current_plan div {
+        text-align: center;
+    }
+}
+
+
+/*Profile-page-End*/
+
+@media only screen and (min-width:320px) and (max-width:420px) {
+    /* labs-request */
+    .lab-left {
+        flex-wrap: wrap;
+    }
+    .profile-list {
+        width: 100%;
+        margin-top: 30px;
+    }
+    /*labs-request */
+}
+
+@media screen and (min-width:577px) {
+    li.final_50 {
+        float: left;
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .final_50_2 {
+        justify-content: flex-end;
+    }
+}
+
+
+/*university library*/
+
+@media screen and (max-width:767px) {
+    .labs-req-sec .req-separate.rq-s:last-child {
+        padding-left: 0px !important;
+    }
+    .req-separate label {
+        width: 100%;
+    }
+    .req-separate.req-separate-descrip label {
+        width: 100%;
+    }
+}
+
+
+/*End*/
+
+
+/* end */
+
+
+/*16_faq*/
+
+@media screen and (min-width:1025px) and (max-width:1440px) {
+    /* .search_text {
+            width: 52%;
+        } */
+}
+
+@media screen and (min-width:991px) and (max-width:1024px) {
+    .search_text {
+        width: 52%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:990px) {
+    .search_text {
+        width: 100%;
+    }
+    .faq_search {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:767px) {
+    .search_text {
+        width: 100%;
+    }
+    .faq_search {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:424px) {
+    .search_text {
+        width: 100%;
+    }
+    .faq_search {
+        margin-top: 20px;
+    }
+    .faq_search {
+        padding: 12px 9px;
+    }
+    .padd {
+        margin-right: 10px;
+    }
+    .faq_text {
+        padding: 15px;
+    }
+    .faq_text p {
+        line-height: 24px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:424px) {
+    .raise_button .raise_cancel {
+        padding: 15px 19px;
+        font-size: 13px;
+        margin-right: 10px;
+    }
+    .raise_button .raise_send {
+        padding: 10px 32px;
+        font-size: 13px;
+    }
+}
+
+
+/*endfaq*/
+
+
+/* sar */
+
+
+/*Organisations-Start*/
+
+@media only screen and (max-width: 768px) and (min-width: 499px) {
+    #organisations .af_filers .form-control,
+    #organisations button.form-control {
+        display: inline-block;
+    }
+    #organisations .af_filers {
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 320px) {
+    #organisations .af_filers .form-control,
+    #organisations #af_wrapper .form-inline,
+    #organisations .af_filers {
+        display: block;
+    }
+    #organisations .af_filers .form-control {
+        width: 225px;
+        margin: auto;
+    }
+    #organisations .af_filers input {
+        border: 1px solid #ccc;
+    }
+    #organisations .af_filers {
+        width: 100%;
+        padding: 10px;
+    }
+    #organisations .af_filers select.form-control {
+        margin-bottom: 15px;
+    }
+    #organisations .form-inline .af_searchbtn {
+        width: 225px;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 15px;
+    }
+    #organisations .form-inline {
+        text-align: center;
+    }
+    #organisations .lab-left {
+        width: 100%;
+        flex-direction: column;
+    }
+    #organisations .lab-inner-content {
+        flex-wrap: wrap;
+        width: 200px;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+    #organisations .profile-request .sub-btn,
+    #organisations .profile-request .req-btn {
+        width: 200px;
+    }
+    #organisations .lab-left .profile-bk {
+        margin: auto;
+    }
+    #organisations .profile-request h4.req-date-g {
+        text-align: center;
+    }
+    #organisations .org_tasks {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #organisations .org_task1 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #organisations .org_task2 {
+        width: 100%;
+    }
+    #organisations #Requested-Organisations .af_filers input,
+    #organisations #Completed-Organisations .af_filers input {
+        width: 200px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    #organisations #Requested-Organisations .af_filers select,
+    #organisations #Completed-Organisations .af_filers select {
+        width: 200px;
+        margin: auto;
+    }
+    #organisations #Requested-Organisations .org_chat {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+        float: none;
+    }
+    #Requested-Organisations .col-lg-12.af_inner_tab.g-inner-tab,
+    #Completed-Organisations .col-lg-12.af_inner_tab.g-inner-tab {
+        padding: 0px;
+    }
+    #organisations #Requested-Organisations h4.actual-labs img {
+        margin-left: 3px;
+        width: 14px;
+    }
+}
+
+
+/*Organisations-End*/
+
+
+/*17_Financial Report - start*/
+
+@media only screen and (max-width: 500px) and (min-width: 320px) {
+    .financial_report_content {
+        text-align: center;
+    }
+    .financial_report_content .pagination {
+        float: none;
+    }
+    #financial_report_2 .financial_report_content h2 {
+        float: none;
+        font-size: 17px;
+    }
+    #financial_report_2 .financial_report_content .export {
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 400px) and (min-width: 320px) {
+    .financial_report_content .pagination li a {
+        margin-left: 3px;
+    }
+}
+
+
+/*17_Financial Report - end*/
+
+
+/*popup sri - start*/
+
+@media screen and (min-width:1025px) and (max-width:1240px) {
+    .organisation_dialog {
+        margin: 25px;
+    }
+}
+
+@media screen and (min-width:991px) and (max-width:1024px) {
+    .organisation_dialog {
+        margin: 25px;
+    }
+    .date_input {
+        width: 80%;
+    }
+    label.date_text {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:990px) {
+    label.date_text {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:767px) {
+    label.date_text {
+        margin-top: 15px;
+    }
+    input.total_input {
+        width: 123px;
+        padding: 13px 40px;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:424px) {
+    label.date_text {
+        margin-top: 15px;
+    }
+    input.total_input {
+        width: 87px;
+        padding: 13px 20px;
+    }
+    textarea.text {
+        padding: 13px;
+    }
+    .total .total_text {
+        padding-right: 15px;
+    }
+    .bottom_side .but_cancel,
+    .bottom_side .but_Submit {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+    .description_text {
+        padding: 10px 20px 30px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:374px) {
+    label.date_text {
+        margin-top: 15px;
+    }
+    input.total_input {
+        width: 68px;
+        padding: 13px 12px;
+    }
+    .total {
+        padding: 50px 20px 0px 20px;
+    }
+    textarea.text {
+        padding: 13px;
+        font-size: 11px;
+    }
+    .total .total_text {
+        padding-right: 10px;
+    }
+    .bottom_side .but_cancel,
+    .bottom_side .but_Submit {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+    .description_text {
+        padding: 10px 20px 30px;
+    }
+    .req h1 {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width:991px) and (max-width:1024px) {
+    .date_input {
+        width: 80%;
+    }
+    label.date_text {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:990px) {
+    label.date_text {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:767px) {
+    label.date_text {
+        margin-top: 15px;
+    }
+    input.total_input {
+        width: 123px;
+        padding: 13px 40px;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:424px) {
+    label.date_text {
+        margin-top: 15px;
+    }
+    input.total_input {
+        width: 87px;
+        padding: 13px 20px;
+    }
+    textarea.text {
+        padding: 13px;
+    }
+    .total .total_text {
+        padding-right: 15px;
+    }
+    .bottom_side .but_cancel,
+    .bottom_side .but_Submit {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+    .description_text {
+        padding: 10px 20px 30px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:374px) {
+    label.date_text {
+        margin-top: 15px;
+    }
+    input.total_input {
+        width: 68px;
+        padding: 13px 12px;
+    }
+    .total {
+        padding: 50px 20px 0px 20px;
+    }
+    textarea.text {
+        padding: 13px;
+        font-size: 11px;
+    }
+    .total .total_text {
+        padding-right: 10px;
+    }
+    .bottom_side .but_cancel,
+    .bottom_side .but_Submit {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+    .description_text {
+        padding: 10px 20px 30px;
+    }
+    .req h1 {
+        font-size: 13px;
+    }
+    .rep_text,
+    .rep_texts {
+        padding: 10px 0px 0px 10px;
+    }
+    input[type="text"].rep_first,
+    input[type=file].rep_file {
+        margin: 20px 10px 10px 15px;
+    }
+    .rep_value .bid_value {
+        padding: 40px 50px 0px 0px;
+    }
+}
+
+
+/*popup srarts*/
+
+@media (min-width: 768px) {
+    .org_popup1 .modal-dialog {
+        width: 900px;
+    }
+    .org_popup1 .modal-dialog {
+        width: 760px;
+        max-width: 95%;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:1023px) {
+    .org_popup1 .modal-dialog {
+        width: 95%;
+        margin: 10px auto;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .org_popup1 .modal-dialog {
+        width: 95%;
+        margin: 10px auto;
+        margin-left: 3%;
+    }
+    .modal-backdrop {
+        display: none !important;
+    }
+    .org_popup1,
+    .org_popup_rating {
+        left: 0px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+/*popup sri - end*/
+
+
+/*/sar */
+
+
+/*changes*/
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .lab-inner-content.req-inner-cont-g {
+        flex-direction: column;
+    }
+    .lab-left,
+    .profile-request.bids_det {
+        width: 100%;
+    }
+    .profile-request.bids_det p.af_active.bidss_amount {
+        text-align: right;
+    }
+    .lab-inner-content.req-inner-cont-g button.req-btn.pending-bg.req-btn-txt-g {
+        float: left;
+    }
+    .af_loop.loop_disabled .lab-left,
+    .af_loop.loop_disabled .bids_det {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .lab-left.uni-lab.flexible_universe .profile-request.rq {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .lab-left.uni-lab.flexible_universe .profile-list li:last-child {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .lab-inner-content.req-inner-cont-g {
+        flex-direction: column;
+    }
+    .lab-left,
+    .profile-request.bids_det {
+        width: 100%;
+    }
+    .profile-request.bids_det p.af_active.bidss_amount {
+        text-align: right;
+    }
+    .lab-inner-content.req-inner-cont-g button.req-btn.pending-bg.req-btn-txt-g {
+        float: left;
+    }
+    .af_loop.loop_disabled .lab-left,
+    .af_loop.loop_disabled .bids_det {
+        width: 100%;
+    }
+    .profile-request.bids_det p.af_active.bidss_amount {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .af_active.bidss_amount {
+        font-size: 16px;
+    }
+    .right-wrapper {
+        padding: 10px;
+    }
+    .col-lg-12.af_inner_tab {
+        padding: 0px;
+    }
+}
+
+
+/*5g post idea*/
+
+@media screen and (min-width:992px) and (max-width:1380px) {
+    /* .create_idea {
+    width: auto;
+    } */
+    .create_border {
+        width: auto;
+    }
+    .private {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .create_idea {
+        width: auto;
+    }
+    .create_border {
+        width: auto;
+    }
+    .private {
+        margin-top: 15px;
+    }
+    .wrapper_public {
+        font-size: 15px;
+    }
+    .mobile_inputs {
+        width: 155px;
+    }
+    .text_area {
+        margin-top: 10px;
+    }
+    .input_text h2 {
+        padding-top: 0px;
+    }
+    .mobile_inputs {
+        margin-top: 10px;
+    }
+    .mobile_input {
+        margin-top: 0px;
+    }
+    .create_button {
+        padding: 30px 0px 10px;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:767px) {
+    .create_idea {
+        width: auto;
+    }
+    .create_border {
+        width: auto;
+    }
+    .private {
+        margin-top: 15px;
+    }
+    .wrapper_public {
+        font-size: 13px;
+    }
+    .mobile_inputs {
+        width: 155px;
+    }
+    .text_area {
+        margin-top: 10px;
+    }
+    .input_text h2 {
+        padding-top: 0px;
+    }
+    .mobile_inputs {
+        width: 145px;
+        margin-right: 10px;
+        margin-top: 10px;
+        padding: 14px 21px;
+    }
+    .mobile_input {
+        margin-top: 0px;
+    }
+    .create_button {
+        padding: 30px 0px 10px;
+    }
+    .text_area {
+        padding: 14px 22px 27px 17px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:425px) {
+    .radio_content [type="radio"]:checked+label,
+    .radio_content [type="radio"]:not(:checked)+label {
+        padding-left: 18px;
+        font-size: 10px;
+    }
+    .create_content {
+        padding: 30px 0px;
+    }
+    .create_idea {
+        width: auto;
+    }
+    .create_border {
+        width: auto;
+    }
+    .private {
+        margin-top: 15px;
+    }
+    .wrapper_public {
+        font-size: 10px;
+    }
+    .mobile_inputs {
+        width: 155px;
+    }
+    .text_area {
+        margin-top: 10px;
+    }
+    .input_text h2 {
+        padding-top: 0px;
+    }
+    .mobile_inputs {
+        width: 140px;
+        margin-right: 10px;
+        margin-top: 10px;
+        padding: 14px 21px;
+    }
+    .mobile_input {
+        margin-top: 0px;
+        width: auto;
+    }
+    .create_button {
+        padding: 30px 0px 10px;
+    }
+    .text_area {
+        padding: 14px 22px 27px 17px;
+        font-size: 12px;
+    }
+    .btn_cancel,
+    .btn_post {
+        font-size: 15px;
+        width: 110px;
+        align-items: center;
+    }
+}
+
+
+/*End post idea*/
+
+
+/*******************************************MODULE 1 CHANGES************************************************/
+
+.profile_details_rs .dis-flex .password_toggle {
+    position: absolute;
+    top: 28px;
+    color: #0767AB;
+    right: 22px;
+}
+
+#organisations .profile-request .sub-btn,
+#organisations .profile-request .req-btn {
+    width: 150px;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 450px) {
+    .profile_details_rs .dis-flex .password_toggle {
+        left: 305px;
+    }
+}
+
+@media only screen and (max-width: 499px) and (min-width: 320px) {
+    .profile_details_rs .dis-flex .password_toggle {
+        left: unset;
+        right: 20px;
+    }
+}
+
+
+/*header tab*/
+
+@media only screen and (max-width:1199px) {
+    .section_af_tab>.col-md-10 {
+        width: 100% !important;
+    }
+}
+
+
+/**/
+
+
+/*******************************************MODULE 1 CHANGES END************************************************/
+
+
+/*module 2and3 aasif*/
+
+
+/*module2*/
+
+
+/*16a_termsandcondition*/
+
+@media screen and (max-width:767px) {
+    .position_afDel {
+        margin-bottom: 10px;
+    }
+    .parars,
+    .editssect {
+        width: 100%;
+    }
+    button.btn.form-control.insearchs {
+        width: 100px;
+    }
+    .create_idea p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .create_border.af_popup_align div#myModaltermsWarning,
+    .create_border.af_popup_align div#myModalterms {
+        left: 300px;
+        background: #00000085;
+    }
+    .right-wrapper.wraper-0 {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .terms_cons .form-group.af_filers,
+    .btnadavanced {
+        width: 100%;
+        float: left;
+    }
+    .terms_cons .form-group.af_filers {
+        margin-bottom: 10px;
+    }
+    .form-inline.ui_margin_20 {
+        width: 100%;
+        float: left;
+    }
+    .flex_formParySt>div {
+        padding: 15px !important;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .input_common {
+        width: 100%;
+    }
+    .form-group.form_dollaralign {
+        flex-direction: column;
+    }
+    .form-group.form_dollaralign input {
+        float: left;
+    }
+}
+
+
+/*End_16a*/
+
+
+/*06a_Researcher List*/
+
+
+/*m3*/
+
+@media screen and (max-width:767px) {
+    p.af_active {
+        float: left;
+    }
+    button.btn.form-control.af_searchbtn {
+        margin: unset;
+        margin-right: auto !important;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .hire_searchWrapper .create_content>.row {
+        display: flex;
+        align-items: center;
+    }
+    .row.af_flexstrat {
+        align-items: end !important;
+    }
+    .row.af_flexstrat .input_text {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .lab-inner-content.researcher_af .profile-request {
+        text-align: left;
+        margin: unset;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    button.btn.form-control.af_searchbtn {
+        width: auto;
+    }
+}
+
+
+/*end module 2and3 aasif*/
+
+.imgnone_aff div#payment_popup {
+    right: 0 !important;
+    left: 0 !important;
+}
+
+.imgnone_aff div#payment_popup input.card_number.carNum_af,
+.imgnone_aff div#payment_popup input.exp_date.cvv_af {
+    background: #ffffff;
+}
+
+
+/************************************QA FEEDBACK***********************************/
+
+@media screen and (max-width:576px) {
+    .content_wrap02 {
+        width: 93%;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1100px) {
+    #register_payment {
+        max-width: 470px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .lab-left.uni-lab.flexible_universe .profile-list li {
+        display: unset;
+    }
+    .lab-left.uni-lab.flexible_universe .profile-request.rq button {
+        float: none;
+        margin-left: 10px !important;
+    }
+}
+
+@media screen and (min-width:767px) {
+    .lab-left.uni-lab.flexible_universe .profile-request.rq {
+        position: absolute;
+        right: 10px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .content-wrap.no-paddingleft {
+        padding-right: 0px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .right-wrapper.plf-0.postidea5 .uik {
+        width: 20%;
+        padding-right: 0px;
+    }
+    .right-wrapper.plf-0.postidea5 .uik1 {
+        width: 80%;
+    }
+    .wt105 {
+        width: 105px;
+    }
+    .profile_topRight .wtr280 input {
+        width: 78% !important;
+    }
+    .profile_topRight .width65 {
+        width: 78%;
+    }
+    .wt120 {
+        width: 19%;
+    }
+    .flex-centalign {
+        display: flex;
+        align-items: center;
+    }
+    .flex-centalign input {
+        width: 173px;
+        float: right;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .ban-g .item img {
+        width: 639px!important;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .profile_details_rs .dis-flex .password_toggle {
+        top: 52px;
+    }
+}
+
+
+/*module 2and3 aasif*/
+
+
+/*module2*/
+
+
+/*16a_termsandcondition*/
+
+@media screen and (max-width:767px) {
+    .position_afDel {
+        margin-bottom: 10px;
+    }
+    .parars,
+    .editssect {
+        width: 100%;
+    }
+    button.btn.form-control.insearchs {
+        width: 100px;
+    }
+    .create_idea p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .create_border.af_popup_align div#myModaltermsWarning,
+    .create_border.af_popup_align div#myModalterms {
+        left: 300px;
+        background: #00000085;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .terms_cons .form-group.af_filers,
+    .btnadavanced {
+        width: 100%;
+        float: left;
+    }
+    .terms_cons .form-group.af_filers {
+        margin-bottom: 10px;
+    }
+    .form-inline.ui_margin_20 {
+        width: 100%;
+        float: left;
+    }
+    .flex_formParySt>div {
+        padding: 15px !important;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .input_common {
+        width: 100%;
+    }
+    .form-group.form_dollaralign {
+        flex-direction: column;
+    }
+    .form-group.form_dollaralign input {
+        float: left;
+    }
+}
+
+
+/*End_16a*/
+
+
+/*06a_Researcher List*/
+
+
+/*m3*/
+
+@media screen and (max-width:767px) {
+    p.af_active {
+        float: left;
+    }
+    button.btn.form-control.af_searchbtn {
+        margin: unset;
+        margin-right: auto !important;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .hire_searchWrapper .create_content>.row {
+        display: flex;
+        align-items: center;
+    }
+    .row.af_flexstrat {
+        align-items: end !important;
+    }
+    .row.af_flexstrat .input_text {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .lab-inner-content.researcher_af .profile-request {
+        text-align: left;
+        margin: unset;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    button.btn.form-control.af_searchbtn {
+        width: auto;
+    }
+}
+
+
+/*end module 2and3 aasif*/
+
+.imgnone_aff div#payment_popup {
+    right: 0 !important;
+    left: 0 !important;
+}
+
+.imgnone_aff div#payment_popup input.card_number.carNum_af,
+.imgnone_aff div#payment_popup input.exp_date.cvv_af {
+    background: #ffffff;
+}
+
+
+/* srivatsan register m2  */
+
+
+/*Register-Start*/
+
+@media only screen and (max-width: 1400px) and (min-width: 1100px) {
+    .reg-signup {
+        right: 8%;
+        padding: 20px 45px;
+        height: 657px;
+        max-width: 480px;
+    }
+    .reg-signup.banks {
+        height: 650px;
+        float: left;
+        margin: 30px 0px;
+        margin-bottom: 0;
+    }
+    .reg-signup .flex {
+        padding: 15px 20px;
+    }
+    .reg-signup h2 {
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+    .reg-static-content {
+        padding: 20px 20px;
+        max-height: 355px;
+    }
+    #register_verification {
+        height: 590px;
+    }
+    #register_verification p {
+        margin: 30px 0px 15px 0px;
+    }
+    .resendOTP {
+        margin-bottom: 15px;
+    }
+    #register_payment {
+        padding: 20px 25px;
+        height: 415px;
+        max-width: 430px;
+    }
+    #register_payment_freetrail {
+        height: 390px;
+    }
+    .reg-signup .current_location {
+        margin: 0px 15px;
+        top: 430px;
+    }
+    .reg-signup .current_location h6 {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 1099px) and (min-width: 990px) {
+    .register-bg {
+        width: 35%;
+    }
+    .reg-signup {
+        right: 5%;
+        max-width: 410px;
+        padding: 20px 35px;
+        height: 600px;
+    }
+    .reg-signup.banks {
+        height: 680px;
+        float: left;
+        margin: auto 0px;
+    }
+    .reg-static-content {
+        left: 22%;
+    }
+    .reg-signup .flex {
+        padding: 15px 20px;
+    }
+    #register_verification {
+        height: 654px;
+    }
+    #register_verification h2 {
+        margin-bottom: 30px;
+    }
+    #register_verification p {
+        margin: 20px 0px 15px 0px;
+    }
+    .resendOTP {
+        margin-bottom: 15px;
+    }
+    #register_payment {
+        padding: 10px 30px 20px 30px;
+        height: 385px;
+        max-width: 410px;
+    }
+    #register_payment .flex.sb {
+        padding: 15px 0px;
+    }
+    #register_payment_freetrail h2 {
+        margin-bottom: 25px;
+    }
+    #register_payment_freetrail {
+        height: 400px;
+        max-width: 430px;
+    }
+    .reg-signup .current_location {
+        margin: 0px 15px;
+        top: 445px;
+        width: 300px;
+    }
+    .reg-signup .current_location h6 {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 989px) and (min-width: 768px) {
+    .register-bg {
+        width: 100%;
+        object-fit: cover;
+        height: 100vh;
+    }
+    .reg-signup {
+        top: 0;
+        bottom: 0;
+        left: unset;
+        right: 2%;
+        margin: auto;
+        max-width: 400px;
+        padding: 20px 20px;
+        height: 570px;
+    }
+    .reg-signup.banks {
+        height: 660px;
+        float: left;
+        margin: auto 0px;
+    }
+    .reg-static-content {
+        left: 2%;
+        right: auto;
+    }
+    .reg-signup .flex {
+        padding: 15px 20px;
+    }
+    .reg-signup h2 {
+        margin-top: 0px;
+    }
+    #register_verification {
+        max-width: 440px;
+        height: 587px;
+        padding: 20px 30px;
+    }
+    #register_verification h2 {
+        margin-bottom: 30px;
+    }
+    #register_verification p {
+        margin: 20px 0px 15px 0px;
+    }
+    .resendOTP {
+        margin-bottom: 15px;
+    }
+    #register_payment {
+        padding: 25px 30px 20px 30px;
+        height: 375px;
+        max-width: 410px;
+    }
+    #register_payment .flex.sb {
+        padding: 15px 0px;
+    }
+    .free_trail {
+        font-size: 20px;
+    }
+    #register_payment_freetrail {
+        max-width: 370px;
+    }
+    #register_payment_freetrail .flex.sb {
+        padding: 15px 0px;
+    }
+    #register_payment_freetrail .reg_paynow,
+    #register_payment_freetrail .reg_cancel {
+        width: 140px;
+    }
+    .reg-signup .current_location {
+        margin: 0px 15px;
+        top: 420px;
+        width: 350px;
+    }
+    .reg-signup .current_location h6 {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    .register-bg {
+        width: 100%;
+        object-fit: cover;
+        height: 500px;
+    }
+    .reg-signup {
+        top: unset;
+        bottom: unset;
+        left: 0;
+        right: 0;
+        margin: 40px auto;
+        max-width: 400px;
+        padding: 20px 20px;
+        height: 570px;
+        position: relative;
+    }
+    .reg-static-content {
+        left: 0;
+        right: 0;
+    }
+    .reg-signup .flex {
+        padding: 15px 20px;
+    }
+    .reg-signup h2 {
+        margin-top: 0px;
+    }
+    .reg-static-content .flex:first-child {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+    .reg-static-content .flex:first-child img {
+        width: 40px;
+    }
+    .reg-static-content {
+        padding: 10px 20px;
+        max-width: 250px;
+        min-height: 285px;
+        position: relative;
+    }
+    .reg-static-content .flex:first-child h3 {
+        font-size: 26px;
+    }
+    .reg-static-details p {
+        font-size: 22px;
+    }
+    .reg-static-details {
+        height: 150px;
+    }
+    .reg-static-content .last-flex svg {
+        height: 150px;
+    }
+    .register-bg {
+        height: 360px;
+        display: none;
+    }
+    .register_container {
+        padding: 40px 0px 10px 0px;
+        background: url(../images/register_bg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    #register_verification p {
+        font-size: 14px;
+        margin: 20px 0px 15px 0px;
+    }
+    #register_verification {
+        height: auto;
+    }
+    #register_payment h2 {
+        margin-bottom: 10px;
+    }
+    #register_payment p {
+        margin: 20px 0px 15px 0px;
+    }
+    #register_payment {
+        padding: 20px 30px;
+        height: 350px;
+        max-width: 370px;
+    }
+    #register_payment .reg_cancel,
+    #register_payment .reg_paynow {
+        width: 120px;
+        padding: 15px 10px;
+    }
+    #register_payment .flex.sb {
+        padding: 15px 10px;
+    }
+    #register_payment_freetrail h2 {
+        margin-bottom: 20px;
+    }
+    #register_payment_freetrail {
+        height: 355px;
+        max-width: 330px;
+    }
+    .free_trail {
+        font-size: 16px;
+        padding: 20px;
+    }
+    #register_payment_freetrail .flex.sb {
+        padding: 15px 0px;
+    }
+    #register_payment_freetrail .reg_paynow,
+    #register_payment_freetrail .reg_cancel {
+        width: 110px;
+        font-size: 15px;
+        padding: 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+    .reg-signup .current_location {
+        margin: 0px 10px;
+        top: 420px;
+        width: 325px;
+    }
+    .reg-signup .current_location h6 {
+        font-size: 13px;
+    }
+    .reg-signup.banks {
+        height: 660px;
+        margin: auto;
+    }
+    .reg-signup .type_tresearch h1 {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 424px) and (min-width: 375px) {
+    .reg-signup .current_location {
+        margin: 0px 10px;
+        top: 435px;
+        width: 275px;
+        height: 91px;
+    }
+    .reg-signup .current_location h6 {
+        font-size: 12px;
+        padding-top: 5px;
+    }
+    .map_clock input.first_margin {
+        margin-right: 10px;
+    }
+    .reg-signup.banks {
+        height: 690px;
+        margin: 40px auto;
+        width: 340px;
+    }
+    .register_as .modal-content,
+    .register_popup .modal-content {
+        width: 350px;
+    }
+    .register_as_radio input[type="radio"] {
+        margin-left: 90px;
+    }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 320px) {
+    .reg-signup .current_location {
+        margin: 0px 10px;
+        top: 475px;
+        width: 230px;
+        height: 70px;
+        padding: 10px;
+    }
+    .reg-signup .current_location h6 {
+        font-size: 11px;
+        padding-top: 5px;
+    }
+    .reg-signup .current_location h1 {
+        font-size: 13px;
+        padding-bottom: 10px;
+    }
+    .reg-signup .current_location hr {
+        margin: 7px 0px;
+    }
+    .map_clock input.first_margin {
+        margin-right: 10px;
+    }
+    .reg-signup .current_location h6 span {
+        font-size: 12px;
+    }
+    .reg-signup .commission_content input {
+        padding: 12px 21px;
+        margin: 20px 10px;
+        width: 68px;
+    }
+    .register_as .modal-content,
+    .register_popup .modal-content {
+        width: 270px;
+    }
+    .register_as_radio input[type="radio"] {
+        margin-left: 60px;
+    }
+    .register_as_button button {
+        padding: 13px 61px;
+    }
+    .registerd_content .registerd_text p {
+        margin: 20px 0px;
+    }
+    .reg-signup .type_tresearch h1 {
+        margin-top: 55px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 320px) {
+    .reg-signup h2 {
+        font-size: 22px;
+    }
+    .reg-signup .flex input,
+    .reg-signup .flex select {
+        font-size: 16px;
+        line-height: unset;
+    }
+    .reg-signup {
+        width: 90%;
+        height: auto;
+        padding: 20px 15px;
+    }
+    .reg-signup .flex {
+        padding: 15px 10px;
+    }
+    .flex.otp input {
+        width: 25px;
+    }
+    .reg_cancel,
+    .reg_next,
+    .reg_paynow {
+        width: 120px;
+        font-size: 15px;
+        padding: 10px;
+    }
+    #register_verification {
+        padding: 20px;
+    }
+    #register_payment {
+        padding: 20px 15px;
+        height: 335px;
+    }
+    #register_payment .flex.sb {
+        padding: 15px 0px;
+        justify-content: space-around;
+    }
+    .free_trail {
+        font-size: 16px;
+        padding: 20px;
+    }
+    #register_payment_freetrail .flex.sb {
+        padding: 15px 0px;
+    }
+    #register_payment_freetrail .reg_paynow,
+    #register_payment_freetrail .reg_cancel {
+        width: 110px;
+        font-size: 15px;
+        padding: 10px 0px;
+    }
+}
+
+
+/*Register-End*/
+
+
+/* end srivatsan register m2  */
+
+
+/* module 2 qa 03-07*/
+
+@media screen and (min-width:992px) {
+    .reg-static-details.rsd-m2-log {
+        height: 258px;
+        margin-top: 28px;
+    }
+    .flex.last-flex.lf-m2-log svg {
+        height: 258px;
+        margin-top: 28px;
+    }
+}
+
+
+/*/module 2 qa */
+
+
+/********************qa 25-6-2020*****************/
+
+@media screen and (min-width:992px) {
+    .af_pr_30 {
+        padding-right: 30px;
+    }
+    .af_pl_30 {
+        padding-left: 30px;
+    }
+    .blur-bgs .modal-dialog.cancel-modal-dialog-g.max-wd-435-g {
+        left: 200px;
+    }
+    .form-inline.csinline-frm {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .form-inline.csinline-frm select#sort-select {
+        margin: 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1100px) {
+    .right-wrapper section.af_content_route ul.nav.nav-tabs {
+        padding-top: 5px;
+    }
+    h2.h2cs {
+        margin-bottom: 60px;
+    }
+    .reg-static-content {
+        max-height: 498px !important;
+    }
+    .profile-request button.req-btn {
+        position: relative;
+        top: -1px;
+    }
+    #register_payment_freetrail {
+        max-width: 530px;
+    }
+    div#register_payment_freetrail .flex.sb {
+        width: 86%;
+        margin: 0px auto;
+    }
+    #register_verification {
+        padding: 30px;
+    }
+    #register_verification .flex.sb {
+        width: 99%;
+        margin: 0px auto;
+    }
+    .reg-signup {
+        max-width: 530px;
+    }
+    #register_verification p {
+        margin: 30px 10px 15px 10px;
+    }
+    .flex {
+        margin-top: 16px;
+    }
+    .reg-static-content {
+        max-height: 410px;
+    }
+    .pro_signup .reg-signup {
+        height: 666px;
+    }
+    .register_container,
+    img.register-bg {
+        HEIGHT: 110VH;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width:992px) {
+    button.confirm-req-btn-g.btn-lg-cn {
+        width: 200px;
+    }
+    .lab-inner-content.request-cal-g.ht-flexibles .profile-request {
+        height: 85px;
+        display: flex;
+        align-items: flex-end;
+        float: left;
+    }
+    .reg-static-details {
+        height: 250px;
+    }
+    .flex.last-flex svg {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1380px) {
+    .wrapper_login {
+        background-size: cover;
+        background-position: center;
+        height: 110vh;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    #register_verification {
+        /* max-width: 470px; */
+    }
+    .reg-static-content {
+        max-height: 440px;
+    }
+}
+
+@media screen and (min-width:1100px) and (max-width:1200px) {
+    #register_verification {
+        /* max-width: 470px; */
+    }
+    .reg-static-content {
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width:1401px) {
+    .reg-static-content {
+        max-height: 440px !important;
+        max-width: 400px;
+    }
+    #register_payment {
+        padding: 20px 30px;
+        height: 430px;
+        max-width: 440px;
+    }
+    #register_payment_freetrail {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    #register_payment {
+        height: 385px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .content_wrap02 {
+        height: 530px;
+    }
+    h3.title_common {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .af_content_route ul.nav.nav-tabs.m2-report li:first-child {
+        margin-right: 65px;
+    }
+}
+
+
+/*MODULE 1 QA ISSUES END*/
+
+
+/********************************************************MODUL3 3 CSS****************************************************************/
+
+
+/**********************************MODULE 3***************************************/
+
+
+/*module 3 07d_Ongoing Ideas staring*/
+
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    .BL_filers {
+        width: 84%
+    }
+}
+
+.lab-left.BL_lab-left {
+    width: 60%;
+    display: flex;
+}
+
+.dev-labs {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.BL_doller_amount img {
+    margin-left: 30px;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .BL-profile-request {
+        text-align: center;
+        margin: 0px;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:767px) {
+    .BL_searchbtn {
+        width: 100px;
+    }
+    .BL_filers {
+        width: 100%;
+    }
+    .dev-labs {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    button.btn.form-control.BL_nowbtn {
+        margin-left: 10px;
+        width: 124px;
+    }
+    .BL_doller_amount img {
+        margin-left: 20px;
+    }
+    .BL_doller_amount h3 {
+        font-size: 20px;
+    }
+    .BL_doller_amount span {
+        margin-left: 22px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+    div#af_wrapper {
+        width: 100%
+    }
+    .BL_filers {
+        position: relative;
+        width: 100%;
+    }
+    .form-group.BL_filers input {
+        padding: 5px 5px
+    }
+    .BL-profile-request img {
+        margin: 5px 0px 0px 29px;
+    }
+    .lab-left.BL_lab-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile-request.BL-profile-request {
+        width: 100%;
+        text-align: center;
+    }
+    .profile-list {
+        width: auto;
+        padding-left: 25px;
+    }
+    .dev-labs {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+
+/*module 3 07d_Ongoing Ideas BL_ end*/
+
+
+/*04f_Add Ideas_Select_Researcher-BL staring*/
+
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    .modal-dialog.BL-modal-dialog {
+        width: 720px;
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .modal-content.BL-modal-content-text h3 {
+        text-align: left;
+        letter-spacing: 1.5px;
+        font-size: 25px;
+        padding: 30px 20px 20px 20px;
+    }
+    .modal-content.BL-modal-content-text {
+        width: 600px;
+    }
+    .form-inline.BL-form-inline {
+        width: 514px;
+    }
+    .modal-dialog.BL-modal-dialog {
+        width: 600px;
+        margin: 30px auto;
+    }
+    .BL-loop {
+        width: 513px;
+        height: auto;
+        margin: 10px 20px 10px 20px;
+    }
+    .BL-cencelbtn {
+        margin-bottom: 20px;
+        width: 200px;
+    }
+    .BL-addbtn {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:767px) {
+    .modal-content.BL-modal-content-text h3 {
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        text-align: left;
+        margin: 15px 20px;
+    }
+    .modal-dialog.BL-modal-dialog {
+        width: 500px;
+        margin: 30px auto;
+    }
+    .modal-content.BL-modal-content-text {
+        width: 500px;
+    }
+    .BL-loop {
+        width: 450px;
+        height: auto;
+        margin: 50px 20px 10px 20px;
+    }
+    .form-inline.BL-form-inline {
+        width: 530px;
+        background: none;
+    }
+    button.btn.form-control.BL_search {
+        width: 30%;
+        max-width: 100%;
+    }
+    .BL-cencelbtn {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+    .modal-content.BL-modal-content-text h3 {
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        text-align: left;
+        margin: 15px 20px;
+    }
+    .modal-dialog.BL-modal-dialog {
+        width: 300px;
+        margin: 30px auto;
+    }
+    .modal-content.BL-modal-content-text {
+        width: 300px;
+    }
+    .BL-loop {
+        width: 250px;
+        height: auto;
+        margin: 50px 20px 10px 20px;
+    }
+    .form-inline.BL-form-inline {
+        width: 300px;
+        background: none;
+    }
+    button.btn.form-control.BL_search {
+        width: 30%;
+        max-width: 100%;
+    }
+    .BL-cencelbtn {
+        margin-bottom: 20px;
+    }
+    .BL-cencel-btn {
+        margin: 20px 60px;
+    }
+    .BL-checkbox {
+        display: block;
+        width: auto;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .payment-modal-dialog-g {
+        left: unset;
+    }
+    .right-inner-cnt-g {
+        margin: 20px auto;
+    }
+    .exp_date-g {
+        width: 100%;
+    }
+    .btn_pay-g {
+        margin: 40px auto;
+    }
+}
+
+@media screen and (max-width:365px) {
+    .note-sec-g {
+        padding: 10px;
+    }
+    .note-txt {
+        margin: 10px;
+    }
+    div.af_loop {
+        padding: 10px;
+    }
+    .pub-img-g {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .mod-notify-g {
+        width: 17%;
+    }
+    .nav-mod-close-g {
+        width: 27% !important;
+    }
+}
+
+
+/* end payment modal */
+
+
+/*module 3 07d_Ongoing Ideas staring*/
+
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    .BL_filers {
+        width: 84%
+    }
+}
+
+.lab-left.BL_lab-left {
+    width: 60%;
+    display: flex;
+}
+
+.dev-labs {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+button.btn.form-control.BL_nowbtn {
+    margin-left: 10px;
+    width: 130px;
+}
+
+.BL_doller_amount img {
+    margin-left: 30px;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .BL-profile-request {
+        text-align: center;
+        margin: 0px;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:767px) {
+    .BL_searchbtn {
+        width: 100px;
+    }
+    .BL_filers {
+        width: 100%;
+    }
+    .dev-labs {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    button.btn.form-control.BL_nowbtn {
+        margin-left: 10px;
+        width: 124px;
+    }
+    .BL_doller_amount img {
+        margin-left: 20px;
+    }
+    .BL_doller_amount h3 {
+        font-size: 20px;
+    }
+    .BL_doller_amount span {
+        margin-left: 22px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+    div#af_wrapper {
+        width: 100%
+    }
+    .BL_filers {
+        position: relative;
+        width: 100%;
+    }
+    .form-group.BL_filers input {
+        padding: 5px 5px
+    }
+    .BL-profile-request img {
+        margin: 5px 0px 0px 29px;
+    }
+    .lab-left.BL_lab-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile-request.BL-profile-request {
+        width: 100%;
+        text-align: center;
+    }
+    .profile-list {
+        width: auto;
+        padding-left: 25px;
+    }
+    .dev-labs {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    button.btn.form-control.BL_nowbtn {
+        margin-left: 0px;
+        width: 130px;
+    }
+}
+
+
+/* m3-sjm */
+
+@media screen and (min-width:1450px) {
+    button.btn.req-button-sj {
+        margin-left: 19%;
+    }
+    .abs-anchor-tag {
+        position: unset;
+        vertical-align: middle;
+        margin-top: 7px;
+        margin-right: 25px;
+    }
+}
+
+@media screen and (min-width:1201px) and (max-width:1449px) {
+    .res-idea-redesign .lab-left {
+        width: 75%;
+    }
+    .res-idea-redesign .profile-request {
+        width: 25%;
+    }
+    .abs-anchor-tag {
+        position: absolute;
+        left: -80%;
+        vertical-align: middle;
+        top: 8px;
+    }
+}
+
+
+/* m3-sjm */
+
+
+/*module 3 07d_Ongoing Ideas BL_ end*/
+
+
+/*04f_Add Ideas_Select_Researcher-BL end*/
+
+
+/*6e*/
+
+@media screen and (min-width:992px) {
+    .lab-parah-cont-g.para-left-padding0 p {
+        padding-right: 340px;
+    }
+    .madel_right.custom-rt-pop {
+        padding: 30px;
+        width: 410px;
+        max-width: 100%;
+    }
+}
+
+
+/**********************************************MODULE 3 ENDS********************************************/
+
+
+/******************************************************** MODULe 4 ****************************************************************/
+
+
+/*module4 aasif*/
+
+@media screen and (max-width:991px) {
+    .gatepass-frm .form-group.af_filers {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .gatepass-frm input[type="date"] {
+        width: 185px;
+    }
+    .gatepass-frm input[type="date"] {
+        background: url("../images/m4/datefilter.png") no-repeat 88%;
+    }
+    .form-inline.gatepass-frm {
+        flex-direction: column;
+    }
+    .slotTime_af input[type="time"].form-control {
+        margin-bottom: 10px;
+    }
+    .flexedslot {
+        justify-content: flex-start;
+    }
+    #m4_pro_header .navbar-header {
+        width: 100%;
+    }
+    select.uiList {
+        float: left;
+        margin-bottom: 10px;
+        width: 200px;
+        max-width: 100%;
+    }
+    form.border-ltForm .form-group.form_dollaralign {
+        flex-direction: column;
+    }
+    .form-group.form_dollaralign input {
+        float: left;
+        width: 200px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .setting-profile-sec p.m4_rating {
+        WIDTH: 50%;
+        MARGIN: 0px AUTO;
+    }
+    .termsCoPay {
+        left: 300px;
+        background: #00000087;
+    }
+    .profile-detail-lists ul li label {
+        width: 69%;
+        display: inline-block;
+        word-break: break-all;
+    }
+    .profile-detail-lists ul li span {
+        display: inline-block;
+        width: 31%;
+    }
+    .profile-detail-lists ul li {
+        width: 100%;
+        display: flex;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .form-group.form_dollaralign.md_afflex {
+        display: unset;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .profilegate_pass .req-inner-cont-g {
+        width: 100%;
+    }
+    .btn-flexdetils button {
+        margin: 0px auto !important;
+        text-align: center;
+        display: block;
+        margin-bottom: 10px !important;
+        float: none;
+    }
+    .profilegate_pass .req-inner-cont-g .lab-left .profile-list {
+        width: 100%;
+        margin: 0px auto;
+        padding-left: 10px;
+    }
+}
+
+
+/*END_module4 aasif*/
+
+
+/*m4-view user rating BL_Staring*/
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .lab-left.BL_lab-left {
+        width: 60%;
+    }
+    .profile-request {
+        text-align: center;
+        margin: 20px auto 0px;
+        width: 40%;
+    }
+    .profile-request.text-right img {
+        margin-left: 200px;
+    }
+    .BL-Credits-txt {
+        text-align: end;
+        margin-top: 0px;
+    }
+    .profile-request.text-right h5 {
+        margin-left: 235px;
+        padding: 5px 3px 0px 0px;
+    }
+}
+
+
+/*srivatsan*/
+
+
+/*m4_28_Profile University starts*/
+
+@media screen and (max-width: 1380px) and (min-width: 320px) {
+    .checkbox-button__control-g {
+        width: 100%;
+    }
+    .univ_certificate_main {
+        height: 217px;
+    }
+    .white_back {
+        margin-left: 15px;
+    }
+    .mar_univ_radio {
+        display: flex;
+        justify-content: center;
+    }
+    .select-option select {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 375px) {
+    .univ_certificate_main {
+        margin: 0px 20px 20px 10px;
+    }
+    .select-option select {
+        width: 230px;
+        font-size: 15px;
+    }
+    .cerv_button .app_but {
+        font-size: 13px;
+        padding: 11px 14px;
+    }
+    .cerv_button .rej_but {
+        font-size: 13px;
+        padding: 11px 14px;
+        margin-left: 10px;
+    }
+}
+
+
+/*m4_28_Profile University ends*/
+
+
+/* m4_30a_Manage Univ Sub Admin Add starts*/
+
+@media screen and (min-width:992px) and (max-width:1380px) {
+    .manage_sub_row input,
+    .manage_sub_row textarea,
+    .manage_sub_row select {
+        width: 188px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .manage_sub_admin {
+        width: 93%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .manage_sub_admin {
+        width: 91%;
+    }
+    .create_univ h1 {
+        font-size: 12px;
+    }
+    .right_but button {
+        font-size: 9px;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:767px) {
+    .manage_sub_admin {
+        width: 92%;
+    }
+    .create_univ h1 {
+        font-size: 12px;
+    }
+    .right_but button {
+        font-size: 9px;
+        padding: 9px 13px;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:424px) {
+    .manage_sub_admin {
+        width: 92%;
+    }
+    .setting_bittom_but .first_but {
+        padding: 15px 25px;
+        font-size: 15px;
+    }
+    .setting_bittom_but .second_but {
+        padding: 15px 25px;
+        font-size: 15px;
+    }
+    .create_univ h1 {
+        font-size: 11px;
+    }
+    .right_but button {
+        font-size: 7px;
+        padding: 9px 10px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:374px) {
+    .manage_sub_row input,
+    .manage_sub_row textarea,
+    .manage_sub_row select {
+        width: 243px;
+    }
+    .setting_bittom_but .first_but {
+        padding: 15px 25px;
+        font-size: 15px;
+    }
+    .setting_bittom_but .second_but {
+        padding: 15px 25px;
+        font-size: 15px;
+    }
+    .manage_sub_admin {
+        width: 89%;
+    }
+    .create_univ h1 {
+        font-size: 14px;
+    }
+    .right_but button {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    .create_univ {
+        padding-bottom: 50px;
+    }
+}
+
+
+/* m4_30a_Manage Univ Sub Admin Add ends*/
+
+
+/*End_srivatsan*/
+
+@media screen and (max-width: 1380px) and (min-width: 320px) {
+    section.af_content_route.profile28 .univ_certificate_main {
+        height: auto;
+    }
+}
+
+@media screen and (min-width:992px) {
+    section.af_content_route.subadmin_40 .manage_sub_row input,
+    section.af_content_route.subadmin_40 .manage_sub_row textarea,
+    section.af_content_route.subadmin_40 .manage_sub_row select {
+        width: 300px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1100px) {
+    .reg-static-content {
+        max-height: 440px !important;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1100px) {
+    #register_verification {
+        height: 590px;
+        overflow-y: auto;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .reg-signup {
+        max-width: 530px;
+        overflow-y: auto;
+    }
+}
+
+
+/*QA Start*/
+
+@media only screen and (max-width: 500px) and (min-width: 320px) {
+    .new_m5_05 .financial_report_content,
+    .financial_report_content {
+        text-align: left;
+    }
+    .new_m5_05b .commission-sec-input input {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 450px) and (min-width: 320px) {
+    .new_m5_05b .commission-sec-input input {
+        margin-left: 0px;
+        display: block;
+        margin-top: 10px;
+    }
+    .new_m5_05b .Activate-Lab .btn.active-lab.updt.reject {
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    span.admin-drop.new_admin_drop,
+    span.admin-drop {
+        width: unset;
+    }
+}
+
+
+/*/ qa issues by ganesh /*/
+
+@media only screen and (max-width: 767px) {
+    .manage_admin_section.ab-re .md-form-section.staticHeight500 .subject_content p {
+        width: 130px;
+    }
+    .ab-mod {
+        display: block;
+        width: 100%;
+    }
+    .ab-mod li .tab_main_first {
+        width: 100% !important;
+    }
+    .ab-mod li .rej_tab_second {
+        width: 100% !important;
+    }
+    .ab-mod li {
+        width: 50% !important;
+    }
+    .export_tab {
+        display: block;
+        width: 130px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    button.export_tab.ab-export {
+        display: block;
+        width: 220px;
+        margin: 10px auto;
+        text-align: center;
+        float: inherit;
+        position: relative;
+        top: 12px;
+    }
+    .ab-tab {
+        margin: 0px auto;
+        float: inherit;
+    }
+    .recent_table.table_sheetbalance .col-xs-3.col-half-offset {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    input[type="date"] {
+        background: url("../images/m4/m4/calenders.png") 86% #fff no-repeat;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+    }
+}
+
+
+/**************/
+
+@media screen and (max-width:991px) {
+    .wrapper_login.loginm5 .content_wrap02.BL_content_wrap02 {
+        height: 450px;
+        width: 315px;
+        margin: 0px auto;
+    }
+}
+
+
+/*QA End*/
+
+
+/******************************************************** MODULE 4  ENDS **************************************************************/
+
+
+/****************************************************MODULE 5********************************************************/
+
+
+/* module-5 */
+
+@media screen and (max-width: 767px) {
+    nav.navbar.navbar-default.nav-mod-5 div#bs-example-navbar-collapse-1 {
+        padding-bottom: 20px;
+    }
+    span.admin-drop {
+        width: 100%;
+        position: absolute;
+        top: unset;
+        bottom: 15%;
+        padding-left: 8px;
+        left: 16%;
+    }
+}
+
+
+/* end */
+
+
+/* module-5 */
+
+@media screen and (max-width: 767px) {
+    nav.navbar.navbar-default.nav-mod-5 div#bs-example-navbar-collapse-1 {
+        padding-bottom: 20px;
+    }
+    span.admin-drop {
+        width: 100%;
+        position: absolute;
+        top: unset;
+        bottom: 15%;
+        padding-left: 8px;
+        left: 16%;
+    }
+}
+
+
+/* end */
+
+@media screen and (max-width: 767px) {
+    span.admin-drop {
+        padding-left: 68px;
+        left: 0px;
+    }
+}
+
+
+/*sri*/
+
+
+/* 03d_Manage_Labs_Req_Labs start */
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .tab_main_first {
+        padding: 10px 20!important;
+        font-size: 15px!important;
+    }
+    .rej_tab_second {
+        padding: 10px 20px!important;
+        margin-left: 10px;
+        font-size: 15px!important;
+    }
+    .af_content_route .tab_mod>li.active>a,
+    .af_content_route .tab_mod>li.active>a:focus,
+    .af_content_route .tab_mod>li.active>a:hover {
+        padding: 10px 14px!important;
+        font-size: 15px!important;
+    }
+    .export_tab {
+        padding: 10px 24px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:767px) {
+    span.admin-drop {
+        width: 86%;
+    }
+    .tab_main_first {
+        padding: 10px 13!important;
+        font-size: 13px!important;
+    }
+    .rej_tab_second {
+        padding: 10px 3px!important;
+        margin-left: 10px;
+        font-size: 15px!important;
+    }
+    .af_content_route .tab_mod>li.active>a,
+    .af_content_route .tab_mod>li.active>a:focus,
+    .af_content_route .tab_mod>li.active>a:hover {
+        padding: 10px 0px!important;
+        font-size: 13px!important;
+    }
+    .export_tab {
+        padding: 10px 24px;
+        font-size: 13px;
+    }
+    .tab_mod li.active {
+        width: 100px;
+    }
+    .tab_mod a.rej_tab_second {
+        width: 100px;
+    }
+    .af_content_route ul.nav.tab_mod {
+        display: unset;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:424px) {
+    span.admin-drop {
+        width: 86%;
+    }
+    .tab_main_first {
+        padding: 10px 20!important;
+        font-size: 13px!important;
+    }
+    .rej_tab_second {
+        padding: 10px 0px!important;
+        margin-left: 10px;
+        font-size: 15px!important;
+    }
+    .af_content_route .tab_mod>li.active>a,
+    .af_content_route .tab_mod>li.active>a:focus,
+    .af_content_route .tab_mod>li.active>a:hover {
+        padding: 10px 0px!important;
+        font-size: 13px!important;
+    }
+    .export_tab {
+        padding: 10px 24px;
+        font-size: 13px;
+    }
+    .tab_mod li.active {
+        width: 100px;
+    }
+    .tab_mod a.rej_tab_second {
+        width: 100px;
+    }
+    .af_content_route ul.nav.tab_mod {
+        display: unset;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:374px) {
+    span.admin-drop {
+        width: 86%;
+    }
+    .tab_main_first {
+        padding: 10px 10!important;
+        font-size: 11px!important;
+    }
+    .rej_tab_second {
+        padding: 10px 0px!important;
+        margin-left: 10px;
+        font-size: 11px!important;
+    }
+    .af_content_route .tab_mod>li.active>a,
+    .af_content_route .tab_mod>li.active>a:focus,
+    .af_content_route .tab_mod>li.active>a:hover {
+        padding: 10px 0px!important;
+        font-size: 11px!important;
+        width: 88px;
+    }
+    .export_tab {
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+    .tab_mod li.active {
+        width: 100px;
+    }
+    .tab_mod a.rej_tab_second {
+        width: 100px;
+    }
+    .af_content_route ul.nav.tab_mod {
+        display: unset;
+    }
+}
+
+
+/* 03d_Manage_Labs_Req_Labs end */
+
+
+/*end-sri*/
+
+
+/*aasif*/
+
+@media screen and (min-width:992px) {
+    label.ratinglabelaf {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .flexapplyaf {
+        flex-direction: column;
+    }
+    .button_applies button.export_tab {
+        margin: 10px 0px;
+        float: left;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .divbtnpro {
+        width: 100%;
+        float: left;
+    }
+}
+
+@media screen and (max-width:576px) {
+    h3.inc_btn_af {
+        flex-direction: column;
+    }
+    button.btn.add_new_filt {
+        margin-left: unset;
+        margin-top: 10px;
+    }
+}
+
+
+/* module-5 */
+
+@media screen and (max-width: 767px) {
+    nav.navbar.navbar-default.nav-mod-5 div#bs-example-navbar-collapse-1 {
+        padding-bottom: 20px;
+    }
+    span.admin-drop {
+        width: 100%;
+        position: absolute;
+        top: unset;
+        bottom: 15%;
+        padding-left: 8px;
+        left: 16%;
+    }
+    .commission-sec p {
+        width: 100%;
+    }
+    .commission-sec-input {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .approve.m-app {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .btn.active-lab.updt.reject {
+        margin-right: 0px;
+    }
+}
+
+
+/* end */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .commission-sec p {
+        width: 100%;
+    }
+    .approve.m-app {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .resend.m-re {
+        vertical-align: inherit;
+    }
+    .commission-sec-input {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .commission-sec p {
+        width: 100%;
+    }
+    .approve.m-app {
+        width: 35%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1500px) {
+    .address-sec-detail span {
+        max-width: 50%;
+    }
+}
+
+
+/* end */
+
+
+/* 04d_Manage_Org_Req_Org start */
+
+@media screen and (min-width:1024px) and (max-width:1125px) {
+    .af_content_route .org_tab>li.active>a,
+    .af_content_route .org_tab>li.active>a:focus,
+    .af_content_route .org_tab>li.active>a:hover {
+        font-size: 15px!important;
+    }
+    .org_tab_second {
+        font-size: 15px!important;
+    }
+    .export_tab {
+        font-size: 15px;
+        padding: 10px 30px;
+    }
+    .org_tab_first {
+        font-size: 15px!important;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    ul.nav.nav-tabs.org_tab {
+        flex-direction: column;
+    }
+    a.org_tab_first {
+        width: 100%;
+    }
+    a.org_tab_second {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .af_content_route .org_tab>li.active>a,
+    .af_content_route .org_tab>li.active>a:focus,
+    .af_content_route .org_tab>li.active>a:hover {
+        padding: 10px 10px!important;
+        font-size: 16px!important;
+    }
+    .org_tab_first {
+        padding: 10px 16px!important;
+        font-size: 16px!important;
+    }
+    .org_tab_second {
+        font-size: 16px!important;
+        padding: 10px 10px!important;
+    }
+    .export_tab {
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+    ul.nav.nav-tabs.org_tab {
+        width: 100%;
+    }
+    a.org_tab_second {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
+
+
+/* 04d_Manage_Org_Req_Org end */
+
+
+/* 07_Researcher_Active_Free_Trial start*/
+
+@media screen and (min-width:320px) and (max-width:424px) {
+    .finance_width .add_tab_button {
+        padding: 10px 17px;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .finance_width .add_tab_button {
+        margin-right: 0px;
+        font-size: 15px;
+    }
+}
+
+
+/* 07_Researcher_Active_Free_Trial end */
+
+
+/**/
+
+
+/************************************************MODULE 5 END**************************************************************/
+
+
+/************************************************MODULE 6 *************************************************/
+
+
+/* 05a_Manage Users - Researchers start */
+
+@media screen and (min-width:1024px) and (max-width:1125px) {
+    .af_content_route .org_tab>li.active>a,
+    .af_content_route .org_tab>li.active>a:focus,
+    .af_content_route .org_tab>li.active>a:hover {
+        font-size: 15px!important;
+    }
+    .org_tab_second {
+        font-size: 15px!important;
+    }
+    .export_tab {
+        font-size: 15px;
+        padding: 10px 30px;
+    }
+    .org_tab_first {
+        font-size: 15px!important;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    ul.nav.nav-tabs.org_tab {
+        flex-direction: column;
+    }
+    a.org_tab_first {
+        width: 100%;
+    }
+    a.org_tab_second {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    .af_content_route .org_tab>li.active>a,
+    .af_content_route .org_tab>li.active>a:focus,
+    .af_content_route .org_tab>li.active>a:hover {
+        padding: 10px 10px!important;
+        font-size: 16px!important;
+    }
+    .org_tab_first {
+        padding: 10px 16px!important;
+        font-size: 16px!important;
+    }
+    .org_tab_second {
+        font-size: 16px!important;
+        padding: 10px 10px!important;
+    }
+    .export_tab {
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+    ul.nav.nav-tabs.org_tab {
+        width: 100%;
+    }
+    a.org_tab_second {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+}
+
+
+/* 05a_Manage Users - Researchers end SRIVATSAN*/
+
+
+/******************************************************************END MODULE 6 ***************************************/
+
+
+
+
+/*QA M4 2nd Revise Start*/
+@media screen and (min-width:320px) and (max-width:400px){ 
+    div#myModaltermsWarning .modal-footer .btn{margin-bottom: 10px;}
+}
+
+.check-form label:before{
+    box-shadow:unset !important;
+}
+
+@media screen and (max-width:767px) {
+
+    .dis-b{
+        display:block;
+    }
+
+    .mob-full {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .dat-full{
+    
+        width: 100% !important;
+        max-width: 100% !important;
+
+}
+
+#financial_report_1 .sub-title {
+    padding-left: 20px;
+}
+
+.add-ab-btn{
+    width:200px !important
+}
+
+
+}
+
+@media screen and (min-width:700px) and (max-width:767px) {
+
+    .dat-full{
+background: url(../images/m4/m4/calenders.png) 94% #fff no-repeat;
+}
+
+}
+
+
+@media screen and (min-width:600px) and (max-width:699px) {
+
+    .dat-full{
+background: url(../images/m4/m4/calenders.png) 93% #fff no-repeat !important;
+}
+
+}
+
+@media screen and (min-width:500px) and (max-width:599px) {
+
+    .dat-full{
+background: url(../images/m4/m4/calenders.png) 92% #fff no-repeat !important;
+}
+
+}
+
+@media screen and (min-width:430px) and (max-width:499px) {
+
+    .dat-full{
+background: url(../images/m4/m4/calenders.png) 92% #fff no-repeat !important;
+}
+
+}
+
+
+@media screen and (min-width:400px) and (max-width:429px) {
+
+    .dat-full{
+background: url(../images/m4/m4/calenders.png) 92% #fff no-repeat !important;
+}
+
+}
+
+@media screen and (min-width:350px) and (max-width:399px) {
+
+    .dat-full{
+background: url(../images/m4/m4/calenders.png) 87% #fff no-repeat !important;
+}
+
+}
+
+@media screen and (min-width:320px) and (max-width:359px) {
+
+    .dat-full{
+background: url(../images/m4/m4/calenders.png) 86% #fff no-repeat !important;
+}
+
+}
+
+
+
+
+@media screen and (min-width:768px) and (max-width:991px) {
+.cust-t-g>li>a{
+ font-size:13px;
+}
+
+}
+
+
+#myModaltermsWarning .modal-body {
+    width: auto !important;
+}
+
+
+
+@media screen and (min-width: 992px){
+#profile-modal {
+    left: 300px;
+    background: #00000085;
+}
+}
+
+
+@media screen and (min-width:768px) and (max-width:800px) {
+.new_lbl{min-height: 50px;}
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+.account_form label{display: block;}
+}
+
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+.create_idea {
+     width: 100%; 
+}
+}
+
+@media screen and (min-width:320px) and (max-width:1200px) {
+.label_common.new_lbl_common{float: left;margin-top: 25px;}
+.percent_txt{width: 100%;}
+}
+
+@media screen and (min-width:320px) and (max-width:460px) {
+h4.selectslot_s{flex-direction: column;}
+h4.selectslot_s span{margin-top: 15px;}
+}
+/*QA M4 2nd Revise End*/
+
+/*QA M4 6nd Revise Start*/
+@media screen and (max-width:767px) {
+    .mob-full {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .dat-full{
+    
+        width: 100% !important;
+        max-width: 100% !important;
+}
+}
+/*QA M6 2nd Revise End*/
+
+
+
+/*QA M6 3rd Revise*/
+@media only screen and (-webkit-min-device-pixel-ratio: 3) and (max-device-width: 812px) and (min-device-width: 375px){
+.wrapper_login {
+     overflow: unset; 
+}
+}
+
+@media screen and (min-width:320px) and (max-width:767px){
+    .wrapper_login{min-height: 700px;height: 100vh; background-size: cover;}
+}

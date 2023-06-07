@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>login</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<!--css-->
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/custom.css" type="text/css">
+	<link rel="stylesheet" href="css/responsive.css" type="text/css">
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <section id="login">
+        <div class="wrapper_login loginm5">
+            <div class="content_wrap02 BL_content_wrap02">
+                <div class="col-lg-12 ui_or">
+                    <div class="row">
+                       <!--section-right-->
+                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 af_rt BL_rt">
+                        <div class="logo_login">
+                            <img src="./images/logo2.png" alt="">
+                        </div>
+                        <form class="login_form01 form02">
+                            
+                              <h3 class="title_common"> Sub Admin Login </h3>
+                              <div class="form-group mail_input">
+                                <input  placeholder="stevesmith88@gmail.com" type="text" class="form-control input_common" id="">
+                              </div>
+                              <div class="form-group pass_input">
+                                <input id="password-field" type="password" class="form-control input_passwrods" name="password" value="secret">
+                                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                              </div>
+                              <a href="#" class="af_anchor pull-right">Forgot Password</a>
+
+                            <button type="submit" class="btn btn-signin"> <a href="m5_02_Dashboard.html">Login</a> </button>
+                              
+                            <a href="#" class="af_anchor">Back to Home</a>
+                          </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(".toggle-password").click(function() {
+
+$(this).toggleClass("fa-eye fa-eye-slash");
+var input = $($(this).attr("toggle"));
+if (input.attr("type") == "password") {
+  input.attr("type", "text");
+} else {
+  input.attr("type", "password");
+}
+});
+        </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'BwSurcoDEMO-Regular';
+  src: url('BwSurcoDEMO-Regular.eot?#iefix') format('embedded-opentype'),  url('BwSurcoDEMO-Regular.otf')  format('opentype'),
+	     url('BwSurcoDEMO-Regular.woff') format('woff'), url('BwSurcoDEMO-Regular.ttf')  format('truetype'), url('BwSurcoDEMO-Regular.svg#BwSurcoDEMO-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

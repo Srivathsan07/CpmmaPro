@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <!--css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <section id="login">
+        <div class="wrapper_login m4-w-login new_m4_login">
+            <div class="content_wrap02">
+                <div class="col-lg-12 ui_or">
+                    <h2 class="af_rotate"><span>or</span></h2>
+                    <div class="row">
+                        <!--section-left-->
+                        <div class="af_pr_30 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="logo_login">
+                                <img src="./images/logo1.png" alt="">
+                            </div>
+                            <form class="login_form01">
+                                <div class="form-group mail_input">
+                                    <label class="label_common">Enter License ID to sign in (Comma Users)</label>
+                                    <input placeholder="License ID" type="text" class="form-control input_common" id="">
+                                </div>
+                                <button type="submit" class="btn btn-signin">Sign In</button>
+                                <hr class="border_common">
+                                <div class="form-group">
+                                    <label class="label_common">Sign Up with Social Media for Comma Pro</label>
+                                    <ul class="socio_icons">
+                                        <li>
+                                            <img src="./images/facebook.svg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="./images/twitter.svg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="./images/linkedin.svg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="./images/google-plus.svg" alt="">
+                                        </li>
+                                    </ul>
+                                    <p class="para_signup">For new user?<a href="" data-toggle="modal" data-target="#myModal_1">Sign Up</a></p>
+                                    <a href="index.html" class="af_anchor">Back to Home</a>
+                                </div>
+                            </form>
+                        </div>
+                        <h2 class="af_rotate displayAf_mob"><span>or</span></h2>
+                        <!--section-right-->
+                        <div class="af_pl_30 col-lg-6 col-md-6 col-sm-12 col-xs-12 af_rt">
+                            <div class="logo_login">
+                                <img src="./images/logo2.png" alt="">
+                            </div>
+                            <form class="login_form01 form02">
+
+                                <h3 class="title_common">University Sign In</h3>
+                                <div class="form-group mail_input">
+                                    <input placeholder="stevesmith88@gmail.com" type="text" class="form-control input_common" id="">
+                                </div>
+                                <div class="form-group pass_input">
+                                    <input id="password-field" type="password" class="form-control input_passwrods" name="password" value="secret">
+                                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                </div>
+                                <a href="#" class="af_anchor pull-right">Forgot Password</a>
+
+                                <button type="submit" class="btn btn-signin">
+                                    <a href="m4_04a_Labs-Researchers List.html">Sign In</a>
+                                    </button>
+
+                                <div class="form-group">
+                                    <label class="label_common">Sign Up with Social Media for Comma Pro</label>
+                                    <ul class="socio_icons">
+                                        <li>
+                                            <img src="./images/facebook.svg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="./images/twitter.svg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="./images/linkedin.svg" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="./images/google-plus.svg" alt="">
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="register_as">
+        <div class="register_model_content">
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal_1" role="dialog">
+                <div class="vertical-align-modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <div class="modal-body">
+                                <div class="register_body_content">
+                                    <h1>Register as?</h1>
+                                </div>
+                                <div class="register_as_radio_content">
+                                    <div class="register_as_radio">
+                                        <input type="radio" class="rdo" id="id1" name="rd"><label for="id1">Researcher</label>
+                                    </div>
+                                    <div class="register_as_radio">
+                                        <input type="radio" class="rdo" id="id2" name="rd"><label for="id2">Lab Centers</label>
+                                    </div>
+                                    <div class="register_as_radio">
+                                        <input type="radio" class="rdo" id="id3" name="rd"><label for="id3">Organization</label>
+                                    </div>
+                                    <div class="register_as_radio">
+                                        <input type="radio" class="rdo" id="id4" name="rd"><label for="id4">Universities</label>
+                                    </div>
+                                </div>
+                                <div class="register_as_button">
+                                    <button class="but">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(".toggle-password").click(function() {
+
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
+    </script>
+</body>
+
+</html>

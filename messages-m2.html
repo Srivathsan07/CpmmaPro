@@ -1,0 +1,809 @@
+<html lang="en">
+   <head>
+      <title>Commo Pro</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+      <!--css-->
+      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+      <link rel="stylesheet" href="css/custom.css" type="text/css">
+      <link rel="stylesheet" href="css/responsive.css" type="text/css">
+      <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@100&display=swap" rel="stylesheet">
+       <script src="./js/jquery.min.js"></script>
+      <script src="./js/popper.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <!--calender-->
+      <link href='./calender/core/main.css' rel='stylesheet' />
+      <link href='./calender/daygrid/main.css' rel='stylesheet' />
+      <link href='./calender/timegrid/main.css' rel='stylesheet' />
+      <script src='./calender/core/main.js'></script>
+      <script src='./calender/interaction/main.js'></script>
+      <script src='./calender/daygrid/main.js'></script>
+      <script src='./calender/timegrid/main.js'></script>
+      <script>
+         document.addEventListener('DOMContentLoaded', function() {
+           var calendarEl = document.getElementById('calendar');
+         
+           var calendar = new FullCalendar.Calendar(calendarEl, {
+             plugins: [ 'interaction', 'dayGrid', 'timeGrid' ],
+             header: {
+               left: 'prev,next today',
+               center: 'title',
+               right: 'dayGridMonth,timeGridWeek,timeGridDay'
+             },
+             defaultDate: '2020-02-12',
+             navLinks: true, // can click day/week names to navigate views
+             selectable: true,
+             selectMirror: true,
+             select: function(arg) {
+               var title = prompt('Event Title:');
+               if (title) {
+                 calendar.addEvent({
+                   title: title,
+                   start: arg.start,
+                   end: arg.end,
+                   allDay: arg.allDay
+                 })
+               }
+               calendar.unselect()
+             },
+             editable: true,
+             eventLimit: true, // allow "more" link when too many events
+             events: [
+               {
+                 title: 'All Day Event',
+                 start: '2020-02-01'
+               },
+               {
+                 title: 'Long Event',
+                 start: '2020-02-07',
+                 end: '2020-02-10'
+               },
+               {
+                 groupId: 999,
+                 title: 'Repeating Event',
+                 start: '2020-02-09T16:00:00'
+               },
+               {
+                 groupId: 999,
+                 title: 'Repeating Event',
+                 start: '2020-02-16T16:00:00'
+               },
+               {
+                 title: 'Conference',
+                 start: '2020-02-11',
+                 end: '2020-02-13'
+               },
+               {
+                 title: 'Meeting',
+                 start: '2020-02-12T10:30:00',
+                 end: '2020-02-12T12:30:00'
+               },
+               {
+                 title: 'Lunch',
+                 start: '2020-02-12T12:00:00'
+               },
+               {
+                 title: 'Meeting',
+                 start: '2020-02-12T14:30:00'
+               },
+               {
+                 title: 'Happy Hour',
+                 start: '2020-02-12T17:30:00'
+               },
+               {
+                 title: 'Dinner',
+                 start: '2020-02-12T20:00:00'
+               },
+               {
+                 title: 'Birthday Party',
+                 start: '2020-02-13T07:00:00'
+               },
+               {
+                 title: 'Click for Google',
+                 url: 'http://google.com/',
+                 start: '2020-02-28'
+               }
+             ]
+           });
+         
+           calendar.render();
+         });
+         
+      </script>
+      <!--End_Calender-->
+   </head>
+   <body>
+      <aside class="side-nav" id="show-side-navigation1">
+         <i class="fa fa-bars close-aside hidden-sm hidden-md hidden-lg" data-close="show-side-navigation1"></i>
+         <div class="heading">
+            <img src="images/c-pro-logo.png" alt="logo">
+         </div>
+         <div class="setting-profile-sec">
+            <img src="images/req-profile.png" alt="profile">
+            <h2>Isabella Ava</h2>
+            <p>Auctus Lab</p>
+         </div>
+        <ul class="categories">
+        <li class="active">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0)">
+                <path d="M18.501 0H1.50098C0.672555 0 0.000976562 0.671578 0.000976562 1.5V13.5C0.000976562 14.3284 0.672555 15 1.50098 15H8.00099V14H1.50098C1.22484 14 1.00096 13.7761 1.00096 13.5V1.5C1.00096 1.22386 1.22484 0.999984 1.50098 0.999984H18.501C18.7771 0.999984 19.001 1.22386 19.001 1.5V10.5H20.001V1.5C20.001 0.671578 19.3294 0 18.501 0Z" fill="#7B8994"/>
+                <path d="M6.99998 14.5H6V17.5H6.99998V14.5Z" fill="#7B8994"/>
+                <path d="M3.5 12C3.22386 12 2.99998 11.7761 2.99998 11.5V10.5H2V11.5C2 12.3284 2.67158 13 3.5 13H4.49999V12H3.5Z" fill="#7B8994"/>
+                <path d="M2.99998 8.5H2V9.49998H2.99998V8.5Z" fill="#7B8994"/>
+                <path d="M18.2732 10.5915C17.2544 9.57244 15.8724 8.99995 14.4313 9C11.431 9.00014 8.99893 11.4324 8.99902 14.4327C8.99916 17.433 11.4315 19.8651 14.4317 19.865C15.8723 19.865 17.2538 19.2928 18.2725 18.2742C20.3942 16.1529 20.3946 12.7133 18.2732 10.5915ZM14.4287 18.8655C11.9807 18.8647 9.9969 16.8795 9.99774 14.4315C9.99859 11.9835 11.9837 9.99966 14.4317 10.0005C15.6084 9.99731 16.7372 10.4655 17.5662 11.3005C18.3968 12.132 18.8631 13.2593 18.8627 14.4345C18.8619 16.8825 16.8767 18.8663 14.4287 18.8655Z" fill="#7B8994"/>
+                <path d="M23.8537 21.7498L20.7152 18.6123C20.6214 18.5186 20.4942 18.4658 20.3617 18.4658C20.2291 18.4659 20.1019 18.5186 20.0082 18.6123L18.6132 20.0073C18.418 20.2025 18.418 20.519 18.6132 20.7143L21.7517 23.8533C21.8455 23.9471 21.9726 23.9998 22.1052 23.9998C22.238 23.9994 22.3652 23.9461 22.4587 23.8518L23.8537 22.4568C24.0489 22.2615 24.0489 21.945 23.8537 21.7498ZM22.1051 22.7928L19.6736 20.3608L20.3616 19.6728L22.7931 22.1048L22.1051 22.7928Z" fill="#7B8994"/>
+                <path d="M18.2735 17.5663L17.5664 18.2734L19.3101 20.0172L20.0172 19.3101L18.2735 17.5663Z" fill="#7B8994"/>
+                <path d="M14.5 11V12C15.88 12.0016 16.9983 13.12 17 14.5H18C17.9978 12.5679 16.4321 11.0022 14.5 11Z" fill="#7B8994"/>
+                <path d="M8.99999 17H5V18H8.99999V17Z" fill="#7B8994"/>
+                <path d="M7.5 2C6.67158 2 6 2.67158 6 3.5C6 4.32842 6.67158 5 7.5 5C8.32842 5 9 4.32842 9 3.5C9 2.67158 8.32842 2 7.5 2ZM7.5 3.99997C7.22386 3.99997 6.99998 3.77609 6.99998 3.49995C6.99998 3.22381 7.22386 2.99994 7.5 2.99994C7.77614 2.99994 8.00001 3.22381 8.00001 3.49995C8.00001 3.77614 7.77614 3.99997 7.5 3.99997Z" fill="#7B8994"/>
+                <path d="M11 5.5C10.1716 5.5 9.5 6.17158 9.5 7C9.5 7.82842 10.1716 8.5 11 8.5C11.8284 8.5 12.5 7.82842 12.5 7C12.5 6.17158 11.8284 5.5 11 5.5ZM11 7.50001C10.7239 7.50001 10.5 7.27614 10.5 7C10.5 6.72386 10.7239 6.49998 11 6.49998C11.2761 6.49998 11.5 6.72386 11.5 7C11.5 7.27614 11.2761 7.50001 11 7.50001Z" fill="#7B8994"/>
+                <path d="M6.64644 3.64653L4.14648 6.14648L4.85357 6.85357L7.35352 4.35362L6.64644 3.64653Z" fill="#7B8994"/>
+                <path d="M8.35162 3.6474L7.64453 4.35449L10.1445 6.85444L10.8516 6.14736L8.35162 3.6474Z" fill="#7B8994"/>
+                <path d="M14.5 2C13.6716 2 13 2.67158 13 3.5C13 4.32842 13.6716 5 14.5 5C15.3284 5 16 4.32842 16 3.5C16 2.67158 15.3285 2 14.5 2ZM14.5 3.99997C14.2239 3.99997 14 3.77609 14 3.49995C14 3.22381 14.2239 2.99994 14.5 2.99994C14.7761 2.99994 15 3.22381 15 3.49995C15 3.77614 14.7761 3.99997 14.5 3.99997Z" fill="#7B8994"/>
+                <path d="M13.6464 3.64848L11.1465 6.14844L11.8536 6.85553L14.3535 4.35557L13.6464 3.64848Z" fill="#7B8994"/>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </span>
+          <a href="requested-list-m2.html">Lab Management</a>       
+        </li>
+      </ul>
+      <ul class="sub-list-g">
+        <li>
+          <a href="#">
+            <p class="inner-d-g">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none">
+                <path d="M7 7L0 0V14L7 7Z" fill="#76797B"/>
+              </svg>
+            </p>
+            Manage Researcher
+          </a>
+        </li>
+        <li>
+          <a href="m2_06a_Terms-&-Conditions.html">
+            <p class="inner-d-g">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none">
+                <path d="M7 7L0 0V14L7 7Z" fill="#76797B"/>
+              </svg>
+            </p>
+            Terms & Condition
+          </a>
+        </li>
+        <li>
+          <a href="m2_07a_Payment-Structure.html">
+            <p class="inner-d-g">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none">
+                <path d="M7 7L0 0V14L7 7Z" fill="#76797B"/>
+              </svg>
+            </p>
+            Payment Structure
+          </a>
+        </li>
+        <li>
+          <a href="m2-08-view-user-rating.html">
+            <p class="inner-d-g">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none">
+                <path d="M7 7L0 0V14L7 7Z" fill="#76797B"/>
+              </svg>
+            </p>
+            View User Ratings
+          </a>
+        </li>
+        <li>
+          <a href="09a_Reports-Financial-m2.html">
+            <p class="inner-d-g">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none">
+                <path d="M7 7L0 0V14L7 7Z" fill="#76797B"/>
+              </svg>
+            </p>
+            Financial Report
+          </a>
+        </li>
+      </ul>
+      <div class="menu-footer">
+            <p>Copyrights © 2019 <span>Comma Pro</span></p>
+         </div>
+      </aside>
+      <section id="contents">
+     <nav class="navbar navbar-default">
+      <div class="container-fluid c-pro-header">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <i class="fa fa-align-right"></i>
+          </button>
+          <a class="navbar-brand" href="#">
+          <!-- <img src="images/research.png"/> -->
+          <span class="main-color"></span></a>
+          <b><a class="menu-toggled" href="#"><i data-show="show-side-navigation1" class="fa fa-bars show-side-btn"></i></a></b>
+        </div>
+        <div class="header-msg">
+          <span><a href="messages-m2.html"><img src="images/chat.png"/>Messages</a></span>
+        </div>
+        <div class="header-msg header-notify">
+          <span><img src="images/notification.png"/>Notification</span>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+          <img src="images/rq-dp.png"/>
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Esabella Ava
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="10_profile_page-m2.html">Esabella Ava</a></li>
+                <li><a href="#"> Log out</a></li>
+              </ul>
+            </li>
+            <!-- <li><a href="#"><i data-show="show-side-navigation1" class="fa fa-bars show-side-btn"></i></a></li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+     
+	  <h3 class="message-heading">Messages</h3>
+	  <div class="right-wrapper">
+		  <div class="content-wrap">
+				  <div class="clearfix">
+    <div class="people-list m2-people-list" id="people-list">
+      <div class="message-select-sec">
+      	<div class="search_area">
+      		<input type="text" name="" placeholder="Search here"><button>Search</button>
+      	</div>
+      	<hr>
+	  </div>
+      <ul class="list">
+        <li class="clearfix">
+          <div class="about">
+		   <img src="images/message-dp1.png" alt="avatar" />
+            <div class="name">Organisation</div>
+			<span>06:33 PM</span>
+			<h5>Auctus Introv Labs</h5>
+            <div class="status">
+              <i class="fa fa-circle online"></i> online <img src="images/info-icon.png"/>
+            </div>
+          </div>
+        </li>
+        
+        <li class="clearfix">
+          <div class="about">
+		   <img src="images/message-dp2.png" alt="avatar" />
+            <div class="name">Organisation</div>
+			<span>06:33 PM</span>
+			<h5> Lorem ipsum is a dum...</h5>
+            <div class="status">
+              <i class="fa fa-circle online"></i> online 
+            </div>
+          </div>
+        </li>
+        
+       <li class="clearfix">
+          <div class="about">
+		   <img src="images/message-dp3.png" alt="avatar" />
+            <div class="name">Organisation</div>
+			<span>06:33 PM</span>
+			<h5>Microsoft Technologies</h5>
+            <div class="status">
+              <i class="fa fa-circle offline"></i> offline <img src="images/info-icon.png"/>
+            </div>
+          </div>
+        </li>
+        
+       <li class="clearfix">
+          <div class="about">
+		   <img src="images/message-dp4.png" alt="avatar" />
+            <div class="name">Organisation</div>
+			<span>06:33 PM</span>
+			<h5>Auctus Introv Labs</h5>
+            <div class="status">
+              <i class="fa fa-circle offline"></i> offline 
+            </div>
+          </div>
+        </li>
+		
+		 <li class="clearfix">
+          <div class="about">
+		   <img src="images/message-dp4.png" alt="avatar" />
+            <div class="name">Organisation</div>
+			<span>06:33 PM</span>
+			<h5>Auctus Introv Labs</h5>
+            <div class="status">
+              <i class="fa fa-circle offline"></i> offline 
+            </div>
+          </div>
+        </li>
+   
+      
+      </ul>
+    </div>
+    
+    <div class="chat">
+      <div class="chat-header clearfix">
+        <img src="images/message-dp2.png" alt="avatar" />
+         <div class="name">Organisation</div>
+			<h5>Lorem ipsum is a dummy Text</h5>
+            <div class="status">
+              <i class="fa fa-circle online"></i> online 
+            </div>
+      </div> <!-- end chat-header -->
+      
+      <div class="chat-history m2-ch">
+        <ul>
+          <li class="clearfix">
+            
+            <div class="message other-message ">
+              Hi Vincent, how are you? How is the project coming along?
+            </div>
+			<div class="message-data align-right">
+              <span class="message-data-time" >Today 03:25 PM </span>  &nbsp;
+              <span class="message-data-name" >You</span>
+            </div>
+          </li>
+          
+          <li>
+           
+            <div class="message my-message">
+              Are we meeting today? Project has been already finished and I have results to show you.
+            </div>
+			 <div class="message-data">
+              <span class="message-data-name"> Vincent</span>
+              <span class="message-data-time">Today 10:12 AM</span>
+            </div>
+          </li>
+          
+          <li class="clearfix">
+          
+            <div class="message other-message ">
+              Well I am not sure. The rest of the team is not here yet. Maybe in an hour or so? Have you faced any problems at the last phase of the project?
+            </div>
+			  <div class="message-data align-right">
+              <span class="message-data-time" >10:14 AM, Today</span> &nbsp; &nbsp;
+              <span class="message-data-name" >Olia</span>
+              
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="message my-message">
+              Actually everything was fine. I'm very excited to show this to our team.
+            </div>
+			<div class="message-data">
+              <span class="message-data-name"> Vincent</span>
+              <span class="message-data-time">Today 10:20 AM</span>
+            </div>
+          </li>
+         
+        </ul>
+        
+      </div> <!-- end chat-history -->
+      
+      <div class="chat-message clearfix">
+        <textarea name="message-to-send" id="message-to-send" placeholder ="Type your message" rows="3"></textarea>
+        
+        <button class="msg-button btn-temp new_sendbtn"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<rect x="5" y="5" width="30" height="30" rx="15" fill="url(#paint0_linear)"/>
+</g>
+<g clip-path="url(#clip0)">
+<path d="M12.0014 20.0016C12.021 20.3313 12.2396 20.6086 12.5562 20.7033L18.4173 22.4753L18.6327 26.5154C18.6425 26.6754 18.7502 26.8157 18.9036 26.8679C18.946 26.8842 18.9917 26.8907 19.0341 26.8907C19.1483 26.8907 19.256 26.8451 19.3343 26.7569L21.4066 24.4628L24.3437 26.4959C24.4742 26.5872 24.6276 26.6362 24.7875 26.6362C25.1563 26.6362 25.4761 26.3751 25.5544 26.0096L27.9922 13.5857C28.0216 13.4422 27.9661 13.292 27.8551 13.2007C27.7409 13.106 27.5875 13.0832 27.4505 13.1387L12.4713 19.2347C12.1678 19.3718 11.9818 19.672 12.0014 20.0016ZM19.3768 25.5136L19.243 22.9648L20.7441 24.0026L19.3768 25.5136ZM24.7745 25.8236L19.429 22.1229L26.9251 14.8715L24.7745 25.8236ZM26.1027 14.5517L18.6914 21.7215L12.8368 19.9527L26.1027 14.5517Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0" width="42" height="42" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dx="1" dy="1"/>
+<feGaussianBlur stdDeviation="3"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.027451 0 0 0 0 0.403922 0 0 0 0 0.670588 0 0 0 0.4 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear" x1="20" y1="5" x2="-8.5" y2="49" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0767AB"/>
+<stop offset="1" stop-color="#CDE7F9"/>
+</linearGradient>
+<clipPath id="clip0">
+<rect width="16" height="16" fill="white" transform="translate(12 12)"/>
+</clipPath>
+</defs>
+</svg>
+</button>
+		
+			<img class="emte" src="images/smiling-emot.png"/>
+			<img class="attach-fls" src="images/attach-icon.png"/>
+		
+      </div> <!-- end chat-message -->
+      
+    </div> <!-- end chat -->
+    
+  </div> <!-- end container -->
+
+<script id="message-template" type="text/x-handlebars-template">
+  <li class="clearfix">
+    <div class="message-data align-right">
+      <span class="message-data-time" >{{time}}, Today</span> &nbsp; &nbsp;
+      <span class="message-data-name" >Olia</span> <i class="fa fa-circle me"></i>
+    </div>
+    <div class="message other-message float-right">
+      {{messageOutput}}
+    </div>
+  </li>
+</script>
+
+<script id="message-response-template" type="text/x-handlebars-template">
+  <li>
+    <div class="message-data">
+      <span class="message-data-name"><i class="fa fa-circle online"></i> Vincent</span>
+      <span class="message-data-time">{{time}}, Today</span>
+    </div>
+    <div class="message my-message">
+      {{response}}
+    </div>
+  </li>
+</script>
+
+		  </div>
+		  
+      </div>
+	  
+       <script src='js/main.js'></script>
+	  <script>
+		/*global $, console*/
+/*
+  By Mostafa Omar
+	https://www.facebook.com/MostafaOmarIbrahiem
+*/
+$(function () {
+
+  'use strict';
+
+  (function () {
+
+    var aside = $('.side-nav'),
+
+        showAsideBtn = $('.show-side-btn'),
+
+        contents = $('#contents');
+
+    showAsideBtn.on("click", function () {
+
+      $("#" + $(this).data('show')).toggleClass('show-side-nav');
+
+      contents.toggleClass('margin');
+
+    });
+
+    if ($(window).width() <= 767) {
+
+      aside.addClass('show-side-nav');
+
+    }
+    $(window).on('resize', function () {
+
+      if ($(window).width() > 767) {
+
+        aside.removeClass('show-side-nav');
+
+      }
+
+    });
+
+    // dropdown menu in the side nav
+    var slideNavDropdown = $('.side-nav-dropdown');
+
+    $('.side-nav .categories li').on('click', function () {
+
+      $(this).toggleClass('opend').siblings().removeClass('opend');
+
+      if ($(this).hasClass('opend')) {
+
+        $(this).find('.side-nav-dropdown').slideToggle('fast');
+
+        $(this).siblings().find('.side-nav-dropdown').slideUp('fast');
+
+      } else {
+
+        $(this).find('.side-nav-dropdown').slideUp('fast');
+
+      }
+
+    });
+
+    $('.side-nav .close-aside').on('click', function () {
+
+      $('#' + $(this).data('close')).addClass('show-side-nav');
+
+      contents.removeClass('margin');
+
+    });
+
+  }());
+
+  // Start chart
+
+  var chart = document.getElementById('myChart');
+  Chart.defaults.global.animation.duration = 2000; // Animation duration
+  Chart.defaults.global.title.display = false; // Remove title
+  Chart.defaults.global.title.text = "Chart"; // Title
+  Chart.defaults.global.title.position = 'bottom'; // Title position
+  Chart.defaults.global.defaultFontColor = '#999'; // Font color
+  Chart.defaults.global.defaultFontSize = 10; // Font size for every label
+
+  // Chart.defaults.global.tooltips.backgroundColor = '#FFF'; // Tooltips background color
+  Chart.defaults.global.tooltips.borderColor = 'white'; // Tooltips border color
+  Chart.defaults.global.legend.labels.padding = 0;
+  Chart.defaults.scale.ticks.beginAtZero = true;
+  Chart.defaults.scale.gridLines.zeroLineColor = 'rgba(255, 255, 255, 0.1)';
+  Chart.defaults.scale.gridLines.color = 'rgba(255, 255, 255, 0.02)';
+
+  Chart.defaults.global.legend.display = false;
+
+  var myChart = new Chart(chart, {
+    type: 'bar',
+    data: {
+      labels: ["January", "February", "March", "April", "May", 'Jul'],
+      datasets: [{
+        label: "Lost",
+        fill: false,
+        lineTension: 0,
+        data: [45, 25, 40, 20, 45, 20],
+        pointBorderColor: "#4bc0c0",
+        borderColor: '#4bc0c0',
+        borderWidth: 2,
+        showLine: true,
+      }, {
+        label: "Succes",
+        fill: false,
+        lineTension: 0,
+        startAngle: 2,
+        data: [20, 40, 20, 45, 25, 60],
+        // , '#ff6384', '#4bc0c0', '#ffcd56', '#457ba1'
+        backgroundColor: "transparent",
+        pointBorderColor: "#ff6384",
+        borderColor: '#ff6384',
+        borderWidth: 2,
+        showLine: true,
+      }]
+    },
+  });
+  //  Chart ( 2 )
+
+
+  var Chart2 = document.getElementById('myChart2').getContext('2d');
+  var chart = new Chart(Chart2, {
+    type: 'line',
+    data: {
+      labels: ["January", "February", "March", "April", 'test', 'test', 'test', 'test'],
+      datasets: [{
+        label: "My First dataset",
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 79, 116)',
+        borderWidth: 2,
+        pointBorderColor: false,
+        data: [5, 10, 5, 8, 20, 30, 20, 10],
+        fill: false,
+        lineTension: .4,
+      }, {
+        label: "Month",
+        fill: false,
+        lineTension: .4,
+        startAngle: 2,
+        data: [20, 14, 20, 25, 10, 15, 25, 10],
+        // , '#ff6384', '#4bc0c0', '#ffcd56', '#457ba1'
+        backgroundColor: "transparent",
+        pointBorderColor: "#4bc0c0",
+        borderColor: '#4bc0c0',
+        borderWidth: 2,
+        showLine: true,
+      }, {
+        label: "Month",
+        fill: false,
+        lineTension: .4,
+        startAngle: 2,
+        data: [40, 20, 5, 10, 30, 15, 15, 10],
+        // , '#ff6384', '#4bc0c0', '#ffcd56', '#457ba1'
+        backgroundColor: "transparent",
+        pointBorderColor: "#ffcd56",
+        borderColor: '#ffcd56',
+        borderWidth: 2,
+        showLine: true,
+      }]
+    },
+
+    // Configuration options
+    options: {
+      title: {
+        display: false
+      }
+    }
+  });
+
+
+  console.log(Chart.defaults.global);
+
+  var chart = document.getElementById('chart3');
+  var myChart = new Chart(chart, {
+    type: 'line',
+    data: {
+      labels: ["One", "Two", "Three", "Four", "Five", 'Six', "Seven", "Eight"],
+      datasets: [{
+        label: "Lost",
+        fill: false,
+        lineTension: .5,
+        pointBorderColor: "transparent",
+        pointColor: "white",
+        borderColor: '#d9534f',
+        borderWidth: 0,
+        showLine: true,
+        data: [0, 40, 10, 30, 10, 20, 15, 20],
+        pointBackgroundColor: 'transparent',
+      },{
+        label: "Lost",
+        fill: false,
+        lineTension: .5,
+        pointColor: "white",
+        borderColor: '#5cb85c',
+        borderWidth: 0,
+        showLine: true,
+        data: [40, 0, 20, 10, 25, 15, 30, 0],
+        pointBackgroundColor: 'transparent',
+      },
+                 {
+                   label: "Lost",
+                   fill: false,
+                   lineTension: .5,
+                   pointColor: "white",
+                   borderColor: '#f0ad4e',
+                   borderWidth: 0,
+                   showLine: true,
+                   data: [10, 40, 20, 5, 35, 15, 35, 0],
+                   pointBackgroundColor: 'transparent',
+                 },
+                 {
+                   label: "Lost",
+                   fill: false,
+                   lineTension: .5,
+                   pointColor: "white",
+                   borderColor: '#337ab7',
+                   borderWidth: 0,
+                   showLine: true,
+                   data: [0, 30, 10, 25, 10, 40, 20, 0],
+                   pointBackgroundColor: 'transparent',
+                 }]
+    },
+  });
+
+});
+	  </script>
+	 
+<script>
+(function(){
+  
+  var chat = {
+    messageToSend: '',
+    messageResponses: [
+      'Why did the web developer leave the restaurant? Because of the table layout.',
+      'How do you comfort a JavaScript bug? You console it.',
+      'An SQL query enters a bar, approaches two tables and asks: "May I join you?"',
+      'What is the most used language in programming? Profanity.',
+      'What is the object-oriented way to become wealthy? Inheritance.',
+      'An SEO expert walks into a bar, bars, pub, tavern, public house, Irish pub, drinks, beer, alcohol'
+    ],
+    init: function() {
+      this.cacheDOM();
+      this.bindEvents();
+      this.render();
+    },
+    cacheDOM: function() {
+      this.$chatHistory = $('.chat-history');
+      this.$button = $('button');
+      this.$textarea = $('#message-to-send');
+      this.$chatHistoryList =  this.$chatHistory.find('ul');
+    },
+    bindEvents: function() {
+      this.$button.on('click', this.addMessage.bind(this));
+      this.$textarea.on('keyup', this.addMessageEnter.bind(this));
+    },
+    render: function() {
+      this.scrollToBottom();
+      if (this.messageToSend.trim() !== '') {
+        var template = Handlebars.compile( $("#message-template").html());
+        var context = { 
+          messageOutput: this.messageToSend,
+          time: this.getCurrentTime()
+        };
+
+        this.$chatHistoryList.append(template(context));
+        this.scrollToBottom();
+        this.$textarea.val('');
+        
+        // responses
+        var templateResponse = Handlebars.compile( $("#message-response-template").html());
+        var contextResponse = { 
+          response: this.getRandomItem(this.messageResponses),
+          time: this.getCurrentTime()
+        };
+        
+        setTimeout(function() {
+          this.$chatHistoryList.append(templateResponse(contextResponse));
+          this.scrollToBottom();
+        }.bind(this), 1500);
+        
+      }
+      
+    },
+    
+    addMessage: function() {
+      this.messageToSend = this.$textarea.val()
+      this.render();         
+    },
+    addMessageEnter: function(event) {
+        // enter was pressed
+        if (event.keyCode === 13) {
+          this.addMessage();
+        }
+    },
+    scrollToBottom: function() {
+       this.$chatHistory.scrollTop(this.$chatHistory[0].scrollHeight);
+    },
+    getCurrentTime: function() {
+      return new Date().toLocaleTimeString().
+              replace(/([\d]+:[\d]{2})(:[\d]{2})(.*)/, "$1$3");
+    },
+    getRandomItem: function(arr) {
+      return arr[Math.floor(Math.random()*arr.length)];
+    }
+    
+  };
+  
+  chat.init();
+  
+  var searchFilter = {
+    options: { valueNames: ['name'] },
+    init: function() {
+      var userList = new List('people-list', this.options);
+      var noItems = $('<li id="no-items-found">No items found</li>');
+      
+      userList.on('updated', function(list) {
+        if (list.matchingItems.length === 0) {
+          $(list.list).append(noItems);
+        } else {
+          noItems.detach();
+        }
+      });
+    }
+  };
+  
+  searchFilter.init();
+  
+})();
+
+</script>
+
+
+<script>
+  $(function rmv() {
+  $('#remove').click(function() {
+      $('#image').remove();
+     })
+    }); 
+</script>
+
+<style>
+  .modal-content {
+    width: 380px;
+}
+</style>
+	  
+      </body>
+    </html>

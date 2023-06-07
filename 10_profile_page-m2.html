@@ -1,0 +1,648 @@
+<html lang="en">
+   <head>
+      <title>Commo Pro</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+      <!--css-->
+      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+      <link rel="stylesheet" href="css/custom.css" type="text/css">
+      <link rel="stylesheet" href="css/responsive.css" type="text/css">
+      <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@100&display=swap" rel="stylesheet">
+       <script src="./js/jquery.min.js"></script>
+      <script src="./js/popper.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <!--calender-->
+      <link href='./calender/core/main.css' rel='stylesheet' />
+      <link href='./calender/daygrid/main.css' rel='stylesheet' />
+      <link href='./calender/timegrid/main.css' rel='stylesheet' />
+      <script src='./calender/core/main.js'></script>
+      <script src='./calender/interaction/main.js'></script>
+      <script src='./calender/daygrid/main.js'></script>
+      <script src='./calender/timegrid/main.js'></script>
+      <script>
+         document.addEventListener('DOMContentLoaded', function() {
+           var calendarEl = document.getElementById('calendar');
+         
+           var calendar = new FullCalendar.Calendar(calendarEl, {
+             plugins: [ 'interaction', 'dayGrid', 'timeGrid' ],
+             header: {
+               left: 'prev,next today',
+               center: 'title',
+               right: 'dayGridMonth,timeGridWeek,timeGridDay'
+             },
+             defaultDate: '2020-02-12',
+             navLinks: true, // can click day/week names to navigate views
+             selectable: true,
+             selectMirror: true,
+             select: function(arg) {
+               var title = prompt('Event Title:');
+               if (title) {
+                 calendar.addEvent({
+                   title: title,
+                   start: arg.start,
+                   end: arg.end,
+                   allDay: arg.allDay
+                 })
+               }
+               calendar.unselect()
+             },
+             editable: true,
+             eventLimit: true, // allow "more" link when too many events
+             events: [
+               {
+                 title: 'All Day Event',
+                 start: '2020-02-01'
+               },
+               {
+                 title: 'Long Event',
+                 start: '2020-02-07',
+                 end: '2020-02-10'
+               },
+               {
+                 groupId: 999,
+                 title: 'Repeating Event',
+                 start: '2020-02-09T16:00:00'
+               },
+               {
+                 groupId: 999,
+                 title: 'Repeating Event',
+                 start: '2020-02-16T16:00:00'
+               },
+               {
+                 title: 'Conference',
+                 start: '2020-02-11',
+                 end: '2020-02-13'
+               },
+               {
+                 title: 'Meeting',
+                 start: '2020-02-12T10:30:00',
+                 end: '2020-02-12T12:30:00'
+               },
+               {
+                 title: 'Lunch',
+                 start: '2020-02-12T12:00:00'
+               },
+               {
+                 title: 'Meeting',
+                 start: '2020-02-12T14:30:00'
+               },
+               {
+                 title: 'Happy Hour',
+                 start: '2020-02-12T17:30:00'
+               },
+               {
+                 title: 'Dinner',
+                 start: '2020-02-12T20:00:00'
+               },
+               {
+                 title: 'Birthday Party',
+                 start: '2020-02-13T07:00:00'
+               },
+               {
+                 title: 'Click for Google',
+                 url: 'http://google.com/',
+                 start: '2020-02-28'
+               }
+             ]
+           });
+         
+           calendar.render();
+         });
+         
+      </script>
+      <!--End_Calender-->
+   </head>
+   <body>
+      <aside class="side-nav" id="show-side-navigation1">
+         <i class="fa fa-bars close-aside hidden-sm hidden-md hidden-lg" data-close="show-side-navigation1"></i>
+         <div class="heading">
+            <a href="index.html">
+            <img src="images/c-pro-logo.png" alt="logo">
+			</a>
+         </div>
+         <div class="setting-profile-sec">
+            <img src="images/req-profile.png" alt="profile">
+            <h2>Isabella Ava</h2>
+            <p>Auctus Lab</p>
+         </div>
+         <ul class="categories">
+        <li>
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0)">
+                <path d="M18.501 0H1.50098C0.672555 0 0.000976562 0.671578 0.000976562 1.5V13.5C0.000976562 14.3284 0.672555 15 1.50098 15H8.00099V14H1.50098C1.22484 14 1.00096 13.7761 1.00096 13.5V1.5C1.00096 1.22386 1.22484 0.999984 1.50098 0.999984H18.501C18.7771 0.999984 19.001 1.22386 19.001 1.5V10.5H20.001V1.5C20.001 0.671578 19.3294 0 18.501 0Z" fill="#7B8994"/>
+                <path d="M6.99998 14.5H6V17.5H6.99998V14.5Z" fill="#7B8994"/>
+                <path d="M3.5 12C3.22386 12 2.99998 11.7761 2.99998 11.5V10.5H2V11.5C2 12.3284 2.67158 13 3.5 13H4.49999V12H3.5Z" fill="#7B8994"/>
+                <path d="M2.99998 8.5H2V9.49998H2.99998V8.5Z" fill="#7B8994"/>
+                <path d="M18.2732 10.5915C17.2544 9.57244 15.8724 8.99995 14.4313 9C11.431 9.00014 8.99893 11.4324 8.99902 14.4327C8.99916 17.433 11.4315 19.8651 14.4317 19.865C15.8723 19.865 17.2538 19.2928 18.2725 18.2742C20.3942 16.1529 20.3946 12.7133 18.2732 10.5915ZM14.4287 18.8655C11.9807 18.8647 9.9969 16.8795 9.99774 14.4315C9.99859 11.9835 11.9837 9.99966 14.4317 10.0005C15.6084 9.99731 16.7372 10.4655 17.5662 11.3005C18.3968 12.132 18.8631 13.2593 18.8627 14.4345C18.8619 16.8825 16.8767 18.8663 14.4287 18.8655Z" fill="#7B8994"/>
+                <path d="M23.8537 21.7498L20.7152 18.6123C20.6214 18.5186 20.4942 18.4658 20.3617 18.4658C20.2291 18.4659 20.1019 18.5186 20.0082 18.6123L18.6132 20.0073C18.418 20.2025 18.418 20.519 18.6132 20.7143L21.7517 23.8533C21.8455 23.9471 21.9726 23.9998 22.1052 23.9998C22.238 23.9994 22.3652 23.9461 22.4587 23.8518L23.8537 22.4568C24.0489 22.2615 24.0489 21.945 23.8537 21.7498ZM22.1051 22.7928L19.6736 20.3608L20.3616 19.6728L22.7931 22.1048L22.1051 22.7928Z" fill="#7B8994"/>
+                <path d="M18.2735 17.5663L17.5664 18.2734L19.3101 20.0172L20.0172 19.3101L18.2735 17.5663Z" fill="#7B8994"/>
+                <path d="M14.5 11V12C15.88 12.0016 16.9983 13.12 17 14.5H18C17.9978 12.5679 16.4321 11.0022 14.5 11Z" fill="#7B8994"/>
+                <path d="M8.99999 17H5V18H8.99999V17Z" fill="#7B8994"/>
+                <path d="M7.5 2C6.67158 2 6 2.67158 6 3.5C6 4.32842 6.67158 5 7.5 5C8.32842 5 9 4.32842 9 3.5C9 2.67158 8.32842 2 7.5 2ZM7.5 3.99997C7.22386 3.99997 6.99998 3.77609 6.99998 3.49995C6.99998 3.22381 7.22386 2.99994 7.5 2.99994C7.77614 2.99994 8.00001 3.22381 8.00001 3.49995C8.00001 3.77614 7.77614 3.99997 7.5 3.99997Z" fill="#7B8994"/>
+                <path d="M11 5.5C10.1716 5.5 9.5 6.17158 9.5 7C9.5 7.82842 10.1716 8.5 11 8.5C11.8284 8.5 12.5 7.82842 12.5 7C12.5 6.17158 11.8284 5.5 11 5.5ZM11 7.50001C10.7239 7.50001 10.5 7.27614 10.5 7C10.5 6.72386 10.7239 6.49998 11 6.49998C11.2761 6.49998 11.5 6.72386 11.5 7C11.5 7.27614 11.2761 7.50001 11 7.50001Z" fill="#7B8994"/>
+                <path d="M6.64644 3.64653L4.14648 6.14648L4.85357 6.85357L7.35352 4.35362L6.64644 3.64653Z" fill="#7B8994"/>
+                <path d="M8.35162 3.6474L7.64453 4.35449L10.1445 6.85444L10.8516 6.14736L8.35162 3.6474Z" fill="#7B8994"/>
+                <path d="M14.5 2C13.6716 2 13 2.67158 13 3.5C13 4.32842 13.6716 5 14.5 5C15.3284 5 16 4.32842 16 3.5C16 2.67158 15.3285 2 14.5 2ZM14.5 3.99997C14.2239 3.99997 14 3.77609 14 3.49995C14 3.22381 14.2239 2.99994 14.5 2.99994C14.7761 2.99994 15 3.22381 15 3.49995C15 3.77614 14.7761 3.99997 14.5 3.99997Z" fill="#7B8994"/>
+                <path d="M13.6464 3.64848L11.1465 6.14844L11.8536 6.85553L14.3535 4.35557L13.6464 3.64848Z" fill="#7B8994"/>
+              </g>
+              <defs>
+                <clipPath id="clip0">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </span>
+          <a href="requested-list-m2.html">Lab Management</a>       
+        </li>
+      </ul>
+      <ul class="sub-list-g">
+        <li class="active">
+          <a href="#">
+            <p class="inner-d-g">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none">
+                <path d="M7 7L0 0V14L7 7Z" fill="#76797B"/>
+              </svg>
+            </p>
+            Manage Researcher
+          </a>
+        </li>
+        <li>
+          <a href="m2_06a_Terms-&-Conditions.html">
+            <p class="inner-d-g">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none">
+                <path d="M7 7L0 0V14L7 7Z" fill="#76797B"/>
+              </svg>
+            </p>
+            Terms & Condition
+          </a>
+        </li>
+        <li>
+          <a href="m2_07a_Payment-Structure.html">
+            <p class="inner-d-g">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none">
+                <path d="M7 7L0 0V14L7 7Z" fill="#76797B"/>
+              </svg>
+            </p>
+            Payment Structure
+          </a>
+        </li>
+        <li>
+          <a href="m2-08-view-user-rating.html">
+            <p class="inner-d-g">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none">
+                <path d="M7 7L0 0V14L7 7Z" fill="#76797B"/>
+              </svg>
+            </p>
+            View User Ratings
+          </a>
+        </li>
+        <li>
+          <a href="09a_Reports-Financial-m2.html">
+            <p class="inner-d-g">
+              <svg xmlns="http://www.w3.org/2000/svg" width="7" height="14" viewBox="0 0 7 14" fill="none">
+                <path d="M7 7L0 0V14L7 7Z" fill="#76797B"/>
+              </svg>
+            </p>
+            Financial Report
+          </a>
+        </li>
+      </ul>
+      <div class="menu-footer">
+            <p>Copyrights © 2019 <span>Comma Pro</span></p>
+         </div>
+      </aside>
+      <section id="contents">
+      <nav class="navbar navbar-default">
+      <div class="container-fluid c-pro-header">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <i class="fa fa-align-right"></i>
+          </button>
+          <a class="navbar-brand" href="#">
+          <img src="images/lab-profile-logo.png"/>
+          <span class="main-color">Lab profile</span></a>
+          <b><a class="menu-toggled" href="#"><i data-show="show-side-navigation1" class="fa fa-bars show-side-btn"></i></a></b>
+        </div>
+        <div class="header-msg">
+          <span><a href="messages-m2.html"><img src="images/chat.png"/>Messages</a></span>
+        </div>
+        <div class="header-msg header-notify">
+          <span><img src="images/notification.png"/>Notification</span>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+          <img src="images/rq-dp.png"/>
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Esabella Ava
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="10_profile_page-m2.html">Esabella Ava</a></li>
+                <li><a href="#"> Log out</a></li>
+              </ul>
+            </li>
+            <!-- <li><a href="#"><i data-show="show-side-navigation1" class="fa fa-bars show-side-btn"></i></a></li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="right-wrapper">
+	 
+      <section class="af_content_route">
+        <div class="col-lg-12 af_inner_tab ">
+            <div class="tab-content">
+                <!--home-->
+                <div id="home" class="tab-pane fade in active">
+                    <div class="col-lg-8 col-md-8 col-sm-12 no-pad">
+                        <!--sectionLeft-->
+                        <div id="af_wrapper" class="profile_details_rs">
+                          <div class="profile_head">Profile Details</div>
+                          <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 profile_top text-center">
+                              <img src="./images/m2-profile.png" style="max-width: 100%;border-radius: 5px;">
+                              <button style="color: #0767AB; margin-bottom: 20px; margin-top: 20px;">Browse</button>
+                              <button style="color: #E74C3C;">Remove</button>
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 profile_topRight">
+                              <div class="dis-flex">
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                  <label>Lab Name</label>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                  <input type="text" name="" value="Aveno Besto Lab" style="margin-bottom: 15px;">
+                                </div>
+                               <!--  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                  <label>Last Name</label>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                  <input type="text" name="" value="Kennedy">
+                                </div> -->
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                  <label>Email</label>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                  <input type="email" name="" value="johnkennedy88@gmail.com" class="width65">
+                                  <img src="./images/reg_verify.png"><span class="verify">Verified</span>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                  <label>Phone</label>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                  <input type="text" name="" value="+60 87965 14789" class="width65">
+                                  <img src="./images/reg_verify.png"><span class="verify">Verified</span>
+                                </div>                                                                          </div>
+                            </div>    
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px;">
+                              <hr>
+                              <div class="profile_subHead">Change Password</div>
+                            </div>
+                            
+                            <div class="dis-flex password_section">
+                                <div class="col-lg-2 col-md-6 col-sm-6  col-xs-12 no-padding-right">
+                                  <label>Old Password</label>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                  <input class="reg_password" id="reg_password1" type="password" name="" value="Password@123">
+                                  <i toggle="#reg_password1" class="fa password_toggle fa-eye-slash"></i>
+                                </div> 
+                            </div>
+                            <div class="dis-flex password_section">
+                               <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 no-padding-right">
+                                  <label>New Password</label>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                  <input class="reg_password" id="reg_password2" type="text" name="" value="Password@123">
+                                  <i toggle="#reg_password2" class="fa fa-eye password_toggle"></i>
+                                </div> 
+                                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 no-padding-right">
+                                  <label>Confirm Password</label>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                  <input class="reg_password" id="reg_password3" type="password" name="" value="Password@123">
+                                  <i toggle="#reg_password3" class="fa password_toggle fa-eye-slash"></i>
+                                </div>
+                            </div>
+                            <hr>                            
+
+                            <div class="profile_head">Address and Features</div>
+                            <div class="dis-flex">
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                  <label>Working Hours</label>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                                  <input type="time" name="" value="09:00 AM">
+                                </div> 
+                                <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                                  <input type="time" name="" placeholder="To Time">
+                                </div> 
+                                <div class="col-lg-12 col-sm-12 col-xs-12 add-for-space" style="padding: 0px;">
+                                   <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                    <label>Address</label>
+                                  </div>
+                                  <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
+                                    <textarea rows="4">132, Blue Chill Complex, My Street, Bigtown, BG23 4YZ, England -789.</textarea>
+                                  </div>
+                                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 map-sec-m2">
+                                    <label>Change Address on Map</label>
+                                  </div> 
+                                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 0px;"> 
+                                  <div class="map_content">
+                                    <!-- <h1>Change Address on map</h1> -->
+                                    <div class="map_main">
+                                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps? f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=1685+Centennial+Way+Corona+California+Riverside+County+92882&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=53.87374,114.082031&amp;ie=UTF8&amp;hq=&amp;hnear=1685+Centennial+Way,+Corona,+Riverside,+California+92882&amp;t=m&amp;z=14&amp;ll=33.858119,-117.598538&amp;output=embed"></iframe>
+                                      </div>
+                                      <div class="current_location">
+                                        <h1>Current Location</h1>
+                                        <h6> No, Road Name, Area / Locality Name, City, State,Pin...<span>Change</span></h6>
+                                        <hr>
+                                      </div>
+                                  </div>
+                                </div>
+
+                                </div>
+
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                  <label>Facebook</label>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                  <input type="text" name="" value="www.commapro.com">
+                                </div> 
+                            </div>                                                            
+                            <hr>
+
+                            <div class="profile_subHead">Social Media Links</div>
+                            <div class="dis-flex">
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                  <label>Facebook</label>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                  <input type="text" name="" value="www.facebook.com/Myworks">
+                                </div> 
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                  <label>Twitter</label>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                  <input type="text" name="" value="www.twitter.com/Myworks">
+                                </div> 
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                  <label>Linkedin</label>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                  <input type="text" name="" value="www.linkedin.com/Myworks">
+                                </div> 
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                  <label>Instagram</label>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                  <input type="text" name="" value="www.instagram.com/Myworks">
+                                </div>                                                                                                                               
+                            </div>
+                            <hr>
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="margin-bottom: 20px;"><label>Check - Box Questionnaires</label></div>
+                            <div class="dis-flex">
+                              <div class="col-lg-12 col-sm-12 col-xs-12" style="margin-bottom: 20px;">
+                                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
+                                  <span class="checkbox-button__control-g">Bachelor's</span>
+                                </div>
+                                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
+                                  <input type="checkbox" id="time-1" name="time-1" class="timi-chck-bx-g">
+                                  <span class="custom_design"></span>
+                                </div>
+                              </div>
+                              <div class="col-lg-12 col-sm-12 col-xs-12" style="margin-bottom: 20px;">
+                                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
+                                  <span class="checkbox-button__control-g checked">Master</span>
+                                </div>
+                                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
+                                  <input type="checkbox" id="time-2" name="time-1" class="timi-chck-bx-g" checked>
+                                  <span class="custom_design"></span>
+                                </div>
+                              </div>
+                              <div class="col-lg-12 col-sm-12 col-xs-12" style="margin-bottom: 20px;">
+                                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
+                                  <span class="checkbox-button__control-g checked">PhD</span>
+                                </div>
+                                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
+                                  <input type="checkbox" id="time-3" name="time-1" class="timi-chck-bx-g" checked>
+                                  <span class="custom_design"></span>
+                                </div>
+                              </div>
+                              <div class="col-lg-12 col-sm-12 col-xs-12" style="margin-bottom: 0px;">
+                                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
+                                  <span class="checkbox-button__control-g">Students</span>
+                                </div>
+                                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5">
+                                  <input type="checkbox" id="time-4" name="time-1" class="timi-chck-bx-g">
+                                  <span class="custom_design"></span>
+                                </div>
+                              </div>                                                            
+                            </div>
+
+                            <hr>
+                             <div class="profile_head new_prof_head">Payments and Account Details</div>
+                             <div class="profile_subHead">Set Payment Structure</div>
+                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-bottom: 20px;">
+                             <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 alert_div"><img src="./images/alert.png"><span>Admin Changed the commission 5% to 10%</span></div>
+                             </div>
+                          <div class="dis-flex">
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                              <label>Commission Charge</label>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                              <input type="text" name="" value="10%">
+                            </div> 
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                              <button class="confirm_btn">confirm</button>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                              <a href="#" class="resend">RESEND</a>
+                            </div>
+                          </div>
+                            <hr>
+                            <div class="profile_subHead">Bank Account Details</div>
+                            <div class="dis-flex">
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                  <label>Account Number</label>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                  <input type="text" name="" value="123456789012345">
+                                </div> 
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                  <label>Account Holder Name</label>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                  <input type="text" name="" value="Chris Hemsworth">
+                                </div> 
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                  <label>Branch Name</label>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                  <input type="text" name="" value="Bank of Dubai">
+                                </div> 
+                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                  <label>IFSC Code</label>
+                                </div>
+                                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                                  <input type="text" name="" value="BOD123456">
+                                </div>                                                                                                                               
+                            </div>
+                            <hr>
+
+                            </div>
+                            <div class="profile_btns">
+                              <button class="profile_cancel">Cancel</button>
+                              <button class="profile_update">update</button>                              
+                            </div>
+
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <!--sectionRight-->
+                        <div class="af_dateDetail">
+                            <h3>November Scheduled List </h3>
+                            <div class="availabilityWrap">
+                               <ul>
+                                   <li ><span style="background: #FFFFFF;"></span>Available Date</li>
+                                   <li ><span style="background: #2ECC71;"></span>Closed</li>
+                                   <li ><span style="background: #3498DB;"></span>Accepted</li>
+                                   <li ><span style="background: #F39C12;"></span>Live</li>
+                                   <li ><span style="background: #E74C3C;"></span>Rejected</li>
+                               </ul>
+                            </div>
+                           <!---->
+                           <div id="calenderCustom_af" class="af_dateDetail">
+                            <h3>Google Calendar</h3>
+                            <div id="calendar"></div>
+                           </div>
+                          
+                            
+                        </div>
+    
+                    </div>
+                </div>
+    
+  <!--                 <div id="menu1" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                   
+                  </div>
+                  <div id="menu2" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                   
+                  </div>
+                  <div id="menu3" class="tab-pane fade">
+                      <h3>Menu 2</h3>
+                    
+                    </div> -->
+              </div>
+        </div>
+        
+          
+    
+    </section>
+     
+      </div>
+	  
+      
+	<script src='http://code.jquery.com/jquery-latest.js'></script>
+      <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script> -->
+      <script src='js/main.js'></script>
+	  <script>
+		/*global $, console*/
+/*
+  By Mostafa Omar
+	https://www.facebook.com/MostafaOmarIbrahiem
+*/
+$(function () {
+
+  'use strict';
+
+  (function () {
+
+    var aside = $('.side-nav'),
+
+        showAsideBtn = $('.show-side-btn'),
+
+        contents = $('#contents');
+
+    showAsideBtn.on("click", function () {
+
+      $("#" + $(this).data('show')).toggleClass('show-side-nav');
+
+      contents.toggleClass('margin');
+
+    });
+
+    if ($(window).width() <= 767) {
+
+      aside.addClass('show-side-nav');
+
+    }
+    $(window).on('resize', function () {
+
+      if ($(window).width() > 767) {
+
+        aside.removeClass('show-side-nav');
+
+      }
+
+    });
+
+    // dropdown menu in the side nav
+    var slideNavDropdown = $('.side-nav-dropdown');
+
+    $('.side-nav .categories li').on('click', function () {
+
+      $(this).toggleClass('opend').siblings().removeClass('opend');
+
+      if ($(this).hasClass('opend')) {
+
+        $(this).find('.side-nav-dropdown').slideToggle('fast');
+
+        $(this).siblings().find('.side-nav-dropdown').slideUp('fast');
+
+      } else {
+
+        $(this).find('.side-nav-dropdown').slideUp('fast');
+
+      }
+
+    });
+
+    $('.side-nav .close-aside').on('click', function () {
+
+      $('#' + $(this).data('close')).addClass('show-side-nav');
+
+      contents.removeClass('margin');
+
+    });
+
+  }());
+
+
+
+});
+    </script>
+
+ <script>
+  $(".password_toggle").click(function() {
+    $(this).toggleClass("fa-eye fa-eye-slash");
+    var input = $($(this).attr("toggle"));
+      if (input.attr("type") == "password") {
+        input.attr("type", "text");
+      } else {
+        input.attr("type", "password");
+      }
+  });
+</script>
+
+      </body>
+    </html>

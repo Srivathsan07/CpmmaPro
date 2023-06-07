@@ -1,0 +1,495 @@
+<html lang="en">
+
+<head>
+    <title>Commo Pro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <!--css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!--calender-->
+    <link href='./calender/core/main.css' rel='stylesheet' />
+    <link href='./calender/daygrid/main.css' rel='stylesheet' />
+    <link href='./calender/timegrid/main.css' rel='stylesheet' />
+    <script src='./calender/core/main.js'></script>
+    <script src='./calender/interaction/main.js'></script>
+    <script src='./calender/daygrid/main.js'></script>
+    <script src='./calender/timegrid/main.js'></script>
+    <script src='./calender/calendarid.js'></script>
+
+    <!--End_Calender-->
+</head>
+
+<body>
+    <aside class="side-nav" id="show-side-navigation1">
+        <i class="fa fa-bars close-aside hidden-sm hidden-md hidden-lg" data-close="show-side-navigation1"></i>
+        <div class="heading">
+            <a href="index.html">
+                <img src="images/c-pro-logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="setting-profile-sec m5-profile-sec">
+            <img src="images/m5-profile.png" alt="profile">
+            <div class="m5-ps-right">
+                <h2>Dustin Hoffman</h2>
+                <p>Sub Admin</p>
+            </div>
+        </div>
+       <ul class="categories cate-mod-5">
+            <li>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9.24994 0H1.74994C0.784973 0 0 0.784973 0 1.74994V6.24994C0 7.21509 0.784973 8.00006 1.74994 8.00006H9.24994C10.2151 8.00006 11.0001 7.21509 11.0001 6.24994V1.74994C11.0001 0.784973 10.2151 0 9.24994 0Z" fill="#0767AB"/>
+                    <path d="M9.24994 10H1.74994C0.784973 10 0 10.785 0 11.7501V22.2501C0 23.2151 0.784973 24.0001 1.74994 24.0001H9.24994C10.2151 24.0001 11.0001 23.2151 11.0001 22.2501V11.7501C11.0001 10.785 10.2151 10 9.24994 10Z" fill="#0767AB"/>
+                    <path d="M22.2501 16H14.7501C13.785 16 13 16.785 13 17.7501V22.2501C13 23.2151 13.785 24.0001 14.7501 24.0001H22.2501C23.2151 24.0001 24.0001 23.2151 24.0001 22.2501V17.7501C24.0001 16.785 23.2151 16 22.2501 16Z" fill="#0767AB"/>
+                    <path d="M22.2501 0H14.7501C13.785 0 13 0.784973 13 1.74994V12.2499C13 13.2151 13.785 14.0001 14.7501 14.0001H22.2501C23.2151 14.0001 24.0001 13.2151 24.0001 12.2499V1.74994C24.0001 0.784973 23.2151 0 22.2501 0V0Z" fill="#0767AB"/>
+                </svg>
+               </span>
+                <a href="settings_ideas.html"><b>Dashboard</b></a>
+
+            </li>
+            
+            <li>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M21.0372 19.6116L14.5206 8.33972V2.05664H15.8389V0.738281H7.92876V2.05664H9.24712V8.33972L2.73072 19.6116C2.29332 20.3682 2.29277 21.272 2.72975 22.0291C3.16646 22.7863 3.94924 23.2383 4.82306 23.2383H18.9446C19.8187 23.2383 20.6013 22.7863 21.0382 22.0291C21.4752 21.272 21.4746 20.3682 21.0372 19.6116ZM7.26958 17.042C7.26958 16.5565 7.6633 16.1631 8.14848 16.1631C8.63394 16.1631 9.02739 16.5565 9.02739 17.042C9.02739 17.5275 8.63394 17.9209 8.14848 17.9209C7.6633 17.9209 7.26958 17.5275 7.26958 17.042ZM9.02739 20.5576C8.54221 20.5576 8.14848 20.1642 8.14848 19.6787C8.14848 19.1933 8.54221 18.7998 9.02739 18.7998C9.51285 18.7998 9.9063 19.1933 9.9063 19.6787C9.9063 20.1642 9.51285 20.5576 9.02739 20.5576ZM12.9825 18.5801C12.2545 18.5801 11.6641 17.9897 11.6641 17.2617C11.6641 16.5337 12.2545 15.9434 12.9825 15.9434C13.7107 15.9434 14.3008 16.5337 14.3008 17.2617C14.3008 17.9897 13.7107 18.5801 12.9825 18.5801ZM8.25423 12.6914L10.5655 8.69348V2.05664H13.2022V8.69348L15.5137 12.6914H8.25423ZM16.9375 20.5576C16.4524 20.5576 16.0586 20.1642 16.0586 19.6787C16.0586 19.1933 16.4524 18.7998 16.9375 18.7998C17.423 18.7998 17.8165 19.1933 17.8165 19.6787C17.8165 20.1642 17.423 20.5576 16.9375 20.5576Z" fill="#298ED4"/>
+                </svg>
+               </span>
+                <a href="m5_03b_Manage_Labs_View_Inactive.html"><b>Manage Labs 
+                <img class="racp" src="images/right-arrow-c-pro.png"/>
+                <img class="dacp" src="images/down-arrow-c-pro.png"/></b></a>
+
+                <ul class="side-nav-dropdown" >
+                    <li>
+                        <a  href="#">
+                            <p class="inner-dd-svg"></p>
+                             List of Labs</a>
+                        <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            Requested Labs</a>
+                        <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            All Logs</a>    
+                            <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            Chats</a>   
+                            <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            Financial Report</a>    
+                            <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            Lab</a> 
+                    </li>
+                </ul>
+            </li>
+           
+            
+            <li class="opend active">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4.52952 5.45163C5.99719 5.45163 7.18697 4.26185 7.18697 2.79418C7.18697 1.3265 5.99719 0.136719 4.52952 0.136719C3.06185 0.136719 1.87207 1.3265 1.87207 2.79418C1.87207 4.26185 3.06185 5.45163 4.52952 5.45163Z" fill="#298ED4"/>
+                    <path d="M19.4701 0.136719C20.9379 0.136719 22.1274 1.32654 22.1274 2.79418C22.1274 4.26182 20.9379 5.45159 19.4701 5.45159C18.0023 5.45159 16.8125 4.26177 16.8125 2.79418C16.8125 1.32659 18.0023 0.136719 19.4701 0.136719Z" fill="#298ED4"/>
+                    <path d="M21.4646 5.17383C20.9414 5.66235 20.2412 5.96374 19.4704 5.96374C18.6993 5.96374 17.9993 5.66207 17.4762 5.17383C16.3431 5.47291 15.4418 6.34219 15.0957 7.45417C14.1168 7.27373 13.077 7.17594 12.0001 7.17594C10.9231 7.17594 9.88342 7.27373 8.90445 7.45417C8.55843 6.34219 7.6568 5.47291 6.52416 5.17383C6.0007 5.66207 5.30078 5.96346 4.5298 5.96346C3.75895 5.96346 3.05889 5.66207 2.53562 5.17383C1.07865 5.5587 0 6.88411 0 8.46V11.2182L0.00692213 11.2609L0.197188 11.3204C0.790184 11.5056 1.35471 11.6466 1.8945 11.757C1.64571 12.2904 1.5099 12.8517 1.5099 13.4316C1.5099 15.9361 3.99167 18.1003 7.56441 19.0986C7.43252 19.4604 7.35929 19.8498 7.35929 20.2569V23.0151L7.36639 23.0582L7.55652 23.1177C9.34668 23.6769 10.9024 23.8637 12.183 23.8637C14.6836 23.8637 16.1329 23.1504 16.2223 23.1051L16.4002 23.0151H16.419V20.2569C16.419 19.8701 16.3535 19.4992 16.2341 19.153C19.9148 18.1806 22.4902 15.9826 22.4902 13.4317C22.4902 12.879 22.3681 12.3436 22.1416 11.8333C23.1689 11.6208 23.7477 11.3364 23.8031 11.3082L23.9812 11.218L24 11.2183V8.46005C24.0003 6.88411 22.9217 5.5587 21.4646 5.17383ZM21.7654 13.4316C21.7654 15.6912 19.3589 17.6379 15.9222 18.4953C15.4697 17.7545 14.7439 17.1978 13.8839 16.9711C13.3604 17.4593 12.6602 17.7605 11.8895 17.7605C11.1189 17.7605 10.4186 17.4593 9.89519 16.9711C9.05424 17.1932 8.3408 17.7299 7.88666 18.4462C4.55246 17.5651 2.23506 15.649 2.23506 13.4316C2.23506 12.8964 2.3724 12.3795 2.6239 11.89C3.42669 12.0149 4.16232 12.0664 4.82353 12.0664C7.32412 12.0664 8.77362 11.3534 8.86291 11.3081L9.04077 11.218L9.05987 11.2182V8.45977C9.05987 8.35885 9.05507 8.25861 9.0464 8.16C9.97885 7.99183 10.9709 7.9006 12.0002 7.9006C13.0296 7.9006 14.0219 7.99183 14.9543 8.16C14.9456 8.25889 14.9406 8.35885 14.9406 8.46005V11.2183L14.9477 11.2613L15.1381 11.3207C16.928 11.8796 18.4838 12.0665 19.7639 12.0665C20.3783 12.0665 20.9279 12.0237 21.4107 11.9577C21.6402 12.4273 21.7654 12.921 21.7654 13.4316Z" fill="#298ED4"/>
+                    <path d="M11.8897 17.2482C13.3573 17.2482 14.547 16.0585 14.547 14.5909C14.547 13.1233 13.3573 11.9336 11.8897 11.9336C10.4221 11.9336 9.23242 13.1233 9.23242 14.5909C9.23242 16.0585 10.4221 17.2482 11.8897 17.2482Z" fill="#298ED4"/>
+                    </svg>
+               </span>
+                <a href="m5_04_Manage_Org_List_of_Active_Org.html"><b>Manage Organizations
+                <img class="racp" src="images/right-arrow-c-pro.png"/>
+                <img class="dacp" src="images/down-arrow-c-pro.png"/>
+                </b></a>
+                
+                  <ul class="side-nav-dropdown" style="display: block;" >
+                    <li>
+                        <a class="active" href="#">
+                            <p class="inner-dd-svg"></p>
+                              List of Organizations</a>
+                        <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            Requested Organizations</a>
+                        <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            All Logs</a>    
+                            <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            Chats</a>   
+                            <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            Financial Report</a>    
+                            
+                    </li>
+                </ul>
+            </li>
+            
+             
+             <li>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0)">
+                    <path d="M23.6373 21.8867H0.362672C0.162375 21.8867 0 22.0491 0 22.2494V23.6237C0 23.824 0.162375 23.9864 0.362672 23.9864H23.6373C23.8376 23.9864 24 23.824 24 23.6237V22.2494C24 22.0491 23.8376 21.8867 23.6373 21.8867Z" fill="#298ED4"/>
+                    <path d="M1.34473 19.4684V20.0979C1.34473 20.2994 1.50809 20.4628 1.70965 20.4628H22.2901C22.4916 20.4628 22.655 20.2994 22.655 20.0979V19.4684C22.655 19.2669 22.4916 19.1035 22.2901 19.1035H1.70965C1.50809 19.1035 1.34473 19.2669 1.34473 19.4684Z" fill="#298ED4"/>
+                    <path d="M0.692875 7.80034H23.3066C23.4768 7.80034 23.6147 7.66239 23.6147 7.49219V6.55225C23.6147 6.38209 23.4768 6.24414 23.3065 6.24414H0.692875C0.522672 6.24414 0.384766 6.38209 0.384766 6.5523V7.49223C0.384766 7.66239 0.522672 7.80034 0.692875 7.80034Z" fill="#298ED4"/>
+                    <path d="M3.00141 4.82105H20.9992C21.1747 4.82105 21.2304 4.58424 21.0732 4.50605L12.0743 0.0310391C12.0277 0.00788281 11.9729 0.00788281 11.9263 0.0310391L2.92739 4.50605C2.77022 4.58424 2.82581 4.82105 3.00141 4.82105Z" fill="#298ED4"/>
+                    <path d="M2.43313 16.4973C2.30343 16.4973 2.19824 16.6024 2.19824 16.7322V17.4456C2.19824 17.5753 2.30338 17.6805 2.43313 17.6805H6.37588C6.50559 17.6805 6.61077 17.5753 6.61077 17.4456V16.7322C6.61077 16.6025 6.50563 16.4973 6.37588 16.4973H5.57995V10.5063H6.37588C6.50559 10.5063 6.61077 10.4012 6.61077 10.2714V9.4595C6.61077 9.3298 6.50563 9.22461 6.37588 9.22461H2.43313C2.30343 9.22461 2.19824 9.32975 2.19824 9.4595V10.2714C2.19824 10.4011 2.30338 10.5063 2.43313 10.5063H3.22907V16.4973H2.43313Z" fill="#298ED4"/>
+                    <path d="M10.0288 16.4973C9.89913 16.4973 9.79395 16.6024 9.79395 16.7322V17.4456C9.79395 17.5753 9.89909 17.6805 10.0288 17.6805H13.9716C14.1013 17.6805 14.2065 17.5753 14.2065 17.4456V16.7322C14.2065 16.6025 14.1013 16.4973 13.9716 16.4973H13.1757V10.5063H13.9716C14.1013 10.5063 14.2065 10.4012 14.2065 10.2714V9.4595C14.2065 9.3298 14.1013 9.22461 13.9716 9.22461H10.0288C9.89913 9.22461 9.79395 9.32975 9.79395 9.4595V10.2714C9.79395 10.4011 9.89909 10.5063 10.0288 10.5063H10.8248V16.4973H10.0288Z" fill="#298ED4"/>
+                    <path d="M17.6246 16.4973C17.4949 16.4973 17.3897 16.6024 17.3897 16.7322V17.4456C17.3897 17.5753 17.4948 17.6805 17.6246 17.6805H21.8022V16.7322C21.8022 16.6025 21.697 16.4973 21.5673 16.4973H20.7714V10.5063H21.5673C21.697 10.5063 21.8022 10.4012 21.8022 10.2714V9.4595C21.8022 9.3298 21.697 9.22461 21.5673 9.22461H17.6245C17.4948 9.22461 17.3896 9.32975 17.3896 9.4595V10.2714C17.3896 10.4011 17.4948 10.5063 17.6245 10.5063H18.4205V16.4973H17.6246Z" fill="#298ED4"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+               </span>
+                <a href="m5_05_Manage_Univ_List_of_Active_Univ.html"><b>Manage Universities
+                <img class="racp" src="images/right-arrow-c-pro.png"/>
+                <img class="dacp" src="images/down-arrow-c-pro.png"/>
+                </b></a>
+
+                <ul class="side-nav-dropdown" >
+                    <li>
+                        <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            List of Universities</a>
+                        <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            Requested Universities</a>
+                        <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            All Logs</a>
+                    </li>
+                </ul>
+            </li>
+
+            
+            <li>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0)">
+                    <path d="M22.4039 12.311C22.3074 12.1134 22.3074 11.8868 22.4039 11.6893L23.299 9.85809C23.7974 8.83852 23.4025 7.62329 22.4001 7.0914L20.5996 6.13609C20.4054 6.03306 20.2722 5.84969 20.2342 5.63317L19.8821 3.62557C19.686 2.5078 18.652 1.75667 17.5286 1.91563L15.5105 2.20109C15.2927 2.23184 15.0773 2.16181 14.9193 2.00895L13.4544 0.591835C12.6387 -0.197255 11.3609 -0.197302 10.5453 0.591835L9.08035 2.00909C8.92229 2.162 8.7069 2.23189 8.48912 2.20123L6.47102 1.91577C5.3472 1.75672 4.31361 2.50794 4.11753 3.62571L3.76541 5.63322C3.7274 5.84978 3.59422 6.03311 3.40002 6.13619L1.59956 7.09149C0.597101 7.62333 0.202228 8.83866 0.700601 9.85823L1.59567 11.6893C1.69224 11.8869 1.69224 12.1135 1.59567 12.311L0.700554 14.1422C0.202182 15.1617 0.597054 16.377 1.59952 16.9089L3.39998 17.8642C3.59422 17.9672 3.7274 18.1506 3.76541 18.3671L4.11753 20.3747C4.29603 21.3922 5.16856 22.1059 6.17135 22.1058C6.27011 22.1058 6.37033 22.0988 6.47107 22.0846L8.48916 21.7991C8.7068 21.7682 8.92233 21.8384 9.08039 21.9913L10.5453 23.4084C10.9532 23.803 11.4764 24.0002 11.9998 24.0002C12.5231 24.0001 13.0466 23.8029 13.4543 23.4084L14.9193 21.9913C15.0773 21.8384 15.2927 21.7686 15.5105 21.7991L17.5286 22.0846C18.6525 22.2436 19.686 21.4924 19.8821 20.3746L20.2342 18.3671C20.2722 18.1506 20.4054 17.9672 20.5996 17.8642L22.4001 16.9089C23.4025 16.377 23.7974 15.1617 23.299 14.1421L22.4039 12.311ZM9.23133 5.77112C10.6306 5.77112 11.7691 6.90957 11.7691 8.30888C11.7691 9.70819 10.6306 10.8466 9.23133 10.8466C7.83203 10.8466 6.69358 9.70819 6.69358 8.30888C6.69358 6.90957 7.83203 5.77112 9.23133 5.77112ZM7.92146 17.0572C7.78632 17.1923 7.60919 17.2599 7.43209 17.2599C7.255 17.2599 7.07781 17.1924 6.94272 17.0572C6.67244 16.7869 6.67244 16.3487 6.94272 16.0784L16.0781 6.94299C16.3483 6.67271 16.7866 6.67271 17.0569 6.94299C17.3272 7.21327 17.3272 7.65151 17.0569 7.92179L7.92146 17.0572ZM14.7682 18.2291C13.3689 18.2291 12.2304 17.0907 12.2304 15.6914C12.2304 14.2921 13.3689 13.1536 14.7682 13.1536C16.1675 13.1536 17.3059 14.2921 17.3059 15.6914C17.3059 17.0907 16.1675 18.2291 14.7682 18.2291Z" fill="#298ED4"/>
+                    <path d="M14.7688 14.5371C14.1327 14.5371 13.6152 15.0546 13.6152 15.6906C13.6152 16.3266 14.1327 16.8441 14.7688 16.8441C15.4048 16.8441 15.9223 16.3266 15.9223 15.6906C15.9223 15.0546 15.4048 14.5371 14.7688 14.5371Z" fill="#298ED4"/>
+                    <path d="M9.23162 7.1543C8.59558 7.1543 8.07812 7.67175 8.07812 8.30779C8.07812 8.94383 8.59558 9.46133 9.23162 9.46133C9.86766 9.46133 10.3852 8.94388 10.3852 8.30779C10.3851 7.67179 9.86766 7.1543 9.23162 7.1543Z" fill="#298ED4"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+               </span>
+                <a href="m5_07_Researcher_Active_Free_Trial.html"><b>Set Free Trial
+                <img class="racp" src="images/right-arrow-c-pro.png"/>
+                <img class="dacp" src="images/down-arrow-c-pro.png"/>
+                </b></a>
+
+                <ul class="side-nav-dropdown" >
+                    <li>
+                        <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            Researcher</a>
+                        <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            Lab</a> 
+                    </li>
+                </ul>
+            </li>
+            
+            
+            <li>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0)">
+                    <path d="M12 0C9.99591 0 0 0.169006 0 3.50006V6.81793C0 7.71094 0.394043 8.55103 1.07996 9.12305L9 15.7191V23.0001C9 23.3791 9.21405 23.725 9.55298 23.8951C9.69397 23.965 9.84796 24 9.99994 24C10.2131 24 10.424 23.9321 10.6 23.8L14.1989 21.1011C14.7001 20.725 15 20.127 15 19.5V15.7191L22.92 9.12305C23.606 8.55103 24 7.71094 24 6.81793V3.50006C24 0.169006 14.0041 0 12 0V0ZM12 2.00006C17.5889 2.00006 20.952 2.90698 21.843 3.50006C20.952 4.09296 17.5889 5.00006 12 5.00006C6.41107 5.00006 3.04797 4.09296 2.15698 3.50006C3.04797 2.90698 6.41107 2.00006 12 2.00006Z" fill="#298ED4"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+               </span>
+                <a href="09a_Organisation.html"><b>Set Organization Filter</b></a>
+            </li>
+           
+            <li>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g clip-path="url(#clip0)">
+                    <path d="M21.5265 5.94019L15.816 0.229734C15.6686 0.0821719 15.4633 0 15.2621 0H3.02579C2.5936 0 2.24316 0.350391 2.24316 0.782625V23.2174C2.24316 23.6496 2.59355 24 3.02579 24H20.9736C21.4058 24 21.7562 23.6497 21.7562 23.2174V6.49411C21.7562 6.29578 21.6765 6.09019 21.5265 5.94019ZM16.6432 19.7959H7.35615C6.92396 19.7959 6.57352 19.4455 6.57352 19.0133C6.57352 18.581 6.92391 18.2306 7.35615 18.2306H16.6432C17.0754 18.2306 17.4258 18.581 17.4258 19.0133C17.4258 19.4455 17.0754 19.7959 16.6432 19.7959ZM16.6432 15.6382H7.35615C6.92396 15.6382 6.57352 15.2878 6.57352 14.8555C6.57352 14.4233 6.92391 14.0729 7.35615 14.0729H16.6432C17.0754 14.0729 17.4258 14.4233 17.4258 14.8555C17.4258 15.2878 17.0754 15.6382 16.6432 15.6382ZM16.6432 11.4804H7.35615C6.92396 11.4804 6.57352 11.13 6.57352 10.6978C6.57352 10.2656 6.92391 9.91519 7.35615 9.91519H16.6432C17.0754 9.91519 17.4258 10.2656 17.4258 10.6978C17.4258 11.13 17.0754 11.4804 16.6432 11.4804ZM16.0452 5.71097V2.67253L19.0837 5.71097H16.0452Z" fill="#298ED4"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0">
+                    <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+               </span>
+                <a href="09a_Organisation.html"><b>Balance Sheet</b></a>
+            </li>
+            
+             <li>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M16.8112 5.48879V1.4424C16.8112 0.797322 16.2836 0.269531 15.6384 0.269531H1.17288C0.527795 0.269531 0 0.797322 0 1.4424V2.20476V17.4911V18.0191C0 18.449 0.254123 18.8595 0.625534 19.055L9.5394 23.6684C9.93036 23.8639 10.3995 23.5904 10.3995 23.1406V18.6447H15.6384C16.2836 18.6447 16.8112 18.1171 16.8112 17.4718V11.0601H14.4655V15.7125C14.4655 16.0448 14.2114 16.2989 13.879 16.2989H10.4191V10.2782V6.46638V6.34909C10.4191 5.91904 10.1649 5.50854 9.79352 5.31306L4.53513 2.61546H13.879C14.2114 2.61546 14.4655 2.86958 14.4655 3.2019V5.50854H16.8112V5.48879Z" fill="#298ED4"/>
+                    <path d="M19.8213 3.57233L23.6331 7.38415C24.1218 7.87285 24.1218 8.59611 23.6331 9.08481L19.8213 12.8966C19.3326 13.3853 18.5895 13.4051 18.1008 12.9164C17.6319 12.4474 17.6903 11.6653 18.1401 11.1962L19.8602 9.49551H13.1945C12.8624 9.49551 12.5299 9.35867 12.3148 9.10455C11.7675 8.51812 11.9043 7.48209 12.6081 7.09113C12.784 6.99339 12.999 6.93475 13.1945 6.93475H19.8604C19.8604 6.93475 18.1599 5.23409 18.1403 5.23409C17.6905 4.78449 17.6319 3.98303 18.101 3.53343C18.5702 3.06428 19.3326 3.08364 19.8213 3.57233Z" fill="#298ED4"/>
+                    </svg>
+               </span>
+                <a href="09a_Organisation.html"><b>Logout</b></a>
+            </li>
+
+        </ul>
+
+        <div class="menu-footer m-foot-m5">
+            <p>Copyrights © 2019 Comma Pro</p>
+        </div>
+    </aside>
+    <section id="contents">
+        <nav class="navbar navbar-default nav-mod-5">
+            <div class="container-fluid c-pro-header">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <i class="fa fa-align-right"></i>
+               </button>
+                    <a class="navbar-brand" href="#">
+                        <!-- <img src="images/universities/university.png" /> -->
+                        <span class="main-color">Manage Organizations</span></a>
+                    <b>
+                  <!-- <img src="images/question-pic.png"/> -->
+                  <a class="menu-toggled" href="#"><i data-show="show-side-navigation1" class="fa fa-bars show-side-btn"></i></a></b>
+                </div>
+                <div class="header-msg">
+                    <span><img src="images/chat.png"/><a href="messages.html">Messages</a></span>
+                </div>
+                <div class="header-msg header-notify">
+                    <span><img src="images/notification.png"/>Notification<small class="notify_num">1</small></span>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <img src="images/m5-header-logo.png" />
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dustin Hoffman
+                     <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Dustin Hoffman</a></li>
+                                <li><a href="#"> Log out</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="#"><i data-show="show-side-navigation1" class="fa fa-bars show-side-btn"></i></a></li> -->
+                    <span class="admin-drop">Admin</span>
+					</ul>
+					
+                </div>
+            </div>
+        </nav>
+        <div class="right-wrapper p-0-g">
+            <section class="af_content_route">
+                
+                
+    <div class="col-lg-12 af_inner_tab g-inner-tab">
+               <div class="tab-contentSearch by Name ">
+                    <!--home-->
+                <div id="financial_report_1" class="tab-pane fade in active">
+                <div class="financial_filter_content">
+                 <h2>Filter By</h2>
+                 <div class="filter_flex row">
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <label> Search Name</label>
+                    <input type="text" name="" placeholder="Search by Name ">                   
+                  </div> 
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <label>Select Rating</label>
+                  <!--   <input type="text" name="" placeholder="Search by Name"> -->
+                      <select class="mobile_inputs tech BL_mobile_inputs tech">
+                        <option value="Technology" class="">Select Rating</option>
+                        </select>
+                  </div>                
+                 </div>
+                </div>
+                <div class="financial_report_content BL_financial_report_content">
+                  <h2>List of Organizations</h2>
+                  <button class="export_tab">Export</button>
+
+                  <div class="table-responsive">
+                      <table class="table" >
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Lab Name  <img src="images/organisations/table_arrow.png"></th>
+                      <th>Email Address <img src="images/organisations/table_arrow.png"></th>
+                      <th>Contact Number <img src="images/organisations/table_arrow.png"></th>
+                      <th class="table_align_center">Commission <img src="images/organisations/table_arrow.png"></th>
+                      <th style="width: 150px;" class="table_align_center">Rating <img  src="images/organisations/table_arrow.png"></th>
+                        <th style="width: 150px;" class="table_align_center">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>01</td>
+                      <td>Stream Laboratory</td>
+                      <td>streamlab@gmail.com</td>
+                      <td>+41 78529 36542</td>
+                      <td class="table_align_center">10%</td>
+                      <td class="table_align_center"> 4.5</td>
+                      <td class="table_align_center"><img src="images/table_eye.png"></td>
+                     
+                    </tr>
+                    <tr>
+                      <td>02</td>
+                      <td>UA Value Screens </td>
+                      <td>uaaluescreens@gmail.com</td>
+                      <td>+41 78529 36542</td>
+                      <td class="table_align_center">10%</td>
+                      <td class="table_align_center">4</td>
+                     <td class="table_align_center"><img src="images/table_eye.png"></td>                    
+                    </tr>
+                    <tr>
+                      <td>03</td>
+                      <td>Diagnosticsporium</td>
+                      <td>diagnosticspor@gmail.com</td>
+                      <td>+41 78529 36542</td>
+                      <td class="table_align_center">10%</td>
+                      <td class="table_align_center">3</td>
+                      <td class="table_align_center"><img src="images/table_eye.png"></td>
+                    </tr>
+                    <tr>
+                      <td>04</td>
+                      <td>Sure Point Diagnostics</td>
+                      <td>surepoint@gmail.com </td>
+                      <td>+41 78529 36542</td>
+                      <td class="table_align_center">10%</td>
+                      <td class="table_align_center">3.5</td>
+                     <td class="table_align_center"><img src="images/table_eye.png"></td>
+                    </tr>
+                    <tr>
+                      <td>05</td>
+                      <td>AccuMark Diagnostics</td>
+                      <td>accumarkdiagno@gmail.com </td>
+                      <td>+41 78529 36542</td>
+                      <td class="table_align_center">10%</td>
+                      <td class="table_align_center">4.5</td>
+                     <td class="table_align_center"><img src="images/table_eye.png"></td>
+                    </tr> 
+                                                                              
+                  </tbody>
+                </table>
+                  </div>
+
+            <ul class="pagination">
+              <li class="previous"><a href="#">&#8249;</a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li class="next"><a href="#">&#8250;</a></li>
+            </ul>
+
+                </div>
+                </div>                
+               </div>
+              </div>
+                              
+
+                </div>
+            </section>
+        </div>
+        <script src='http://code.jquery.com/jquery-latest.js'></script>
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script> -->
+        <script src='js/main.js'></script>
+        <script>
+            /*global $, console*/
+            /*
+            By Mostafa Omar
+            https://www.facebook.com/MostafaOmarIbrahiem
+            */
+            $(function() {
+
+                'use strict';
+
+                (function() {
+
+                    var aside = $('.side-nav'),
+
+                        showAsideBtn = $('.show-side-btn'),
+
+                        contents = $('#contents');
+
+                    showAsideBtn.on("click", function() {
+
+                        $("#" + $(this).data('show')).toggleClass('show-side-nav');
+
+                        contents.toggleClass('margin');
+
+                    });
+
+                    if ($(window).width() <= 767) {
+
+                        aside.addClass('show-side-nav');
+
+                    }
+                    $(window).on('resize', function() {
+
+                        if ($(window).width() > 767) {
+
+                            aside.removeClass('show-side-nav');
+
+                        }
+
+                    });
+
+                    // dropdown menu in the side nav
+                    var slideNavDropdown = $('.side-nav-dropdown');
+
+                    $('.side-nav .categories li').on('click', function() {
+
+                        $(this).toggleClass('opend').siblings().removeClass('opend');
+
+                        if ($(this).hasClass('opend')) {
+
+                            $(this).find('.side-nav-dropdown').slideToggle('fast');
+
+                            $(this).siblings().find('.side-nav-dropdown').slideUp('fast');
+
+                        } else {
+
+                            $(this).find('.side-nav-dropdown').slideUp('fast');
+
+                        }
+
+                    });
+
+                    $('.side-nav .close-aside').on('click', function() {
+
+                        $('#' + $(this).data('close')).addClass('show-side-nav');
+
+                        contents.removeClass('margin');
+
+                    });
+
+                }());
+
+
+
+            });
+        </script>
+		<script>
+$(document).ready(function(){
+  $(".cate-mod-5 .side-nav-dropdown a").click(function(){
+	$(".cate-mod-5 .side-nav-dropdown a").addClass("inner-active");
+  });
+});
+</script>
+</body>
+
+</html>

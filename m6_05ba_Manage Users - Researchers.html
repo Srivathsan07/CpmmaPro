@@ -1,0 +1,429 @@
+<html lang="en">
+
+<head>
+    <title>Commo Pro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <!--css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!--calender-->
+    <link href='./calender/core/main.css' rel='stylesheet' />
+    <link href='./calender/daygrid/main.css' rel='stylesheet' />
+    <link href='./calender/timegrid/main.css' rel='stylesheet' />
+    <script src='./calender/core/main.js'></script>
+    <script src='./calender/interaction/main.js'></script>
+    <script src='./calender/daygrid/main.js'></script>
+    <script src='./calender/timegrid/main.js'></script>
+    <script src='./calender/calendarid.js'></script>
+
+    <!--End_Calender-->
+</head>
+
+<body>
+  <aside class="side-nav" id="show-side-navigation1">
+        <i class="fa fa-bars close-aside hidden-sm hidden-md hidden-lg" data-close="show-side-navigation1"></i>
+        <div class="heading">
+            <a href="index.html">
+                <img src="images/c-pro-logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="setting-profile-sec m5-profile-sec">
+            <img src="images/m6/profile.png" alt="profile">
+            <div class="m5-ps-right">
+                <h2>Chris Hemsworth</h2>
+                <p>Super Admin</p>
+            </div>
+        </div>
+       <ul class="categories cate-mod-5">
+            <li>
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9.24994 0H1.74994C0.784973 0 0 0.784973 0 1.74994V6.24994C0 7.21509 0.784973 8.00006 1.74994 8.00006H9.24994C10.2151 8.00006 11.0001 7.21509 11.0001 6.24994V1.74994C11.0001 0.784973 10.2151 0 9.24994 0Z" fill="#0767AB"/>
+                    <path d="M9.24994 10H1.74994C0.784973 10 0 10.785 0 11.7501V22.2501C0 23.2151 0.784973 24.0001 1.74994 24.0001H9.24994C10.2151 24.0001 11.0001 23.2151 11.0001 22.2501V11.7501C11.0001 10.785 10.2151 10 9.24994 10Z" fill="#0767AB"/>
+                    <path d="M22.2501 16H14.7501C13.785 16 13 16.785 13 17.7501V22.2501C13 23.2151 13.785 24.0001 14.7501 24.0001H22.2501C23.2151 24.0001 24.0001 23.2151 24.0001 22.2501V17.7501C24.0001 16.785 23.2151 16 22.2501 16Z" fill="#0767AB"/>
+                    <path d="M22.2501 0H14.7501C13.785 0 13 0.784973 13 1.74994V12.2499C13 13.2151 13.785 14.0001 14.7501 14.0001H22.2501C23.2151 14.0001 24.0001 13.2151 24.0001 12.2499V1.74994C24.0001 0.784973 23.2151 0 22.2501 0V0Z" fill="#0767AB"/>
+                </svg>
+               </span>
+                <a href="m6_02_Dashboard.html"><b>Dashboard</b></a>
+
+            </li>
+            
+            <li>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0)">
+                        <path d="M11.829 11.5609C13.4172 11.5609 14.7925 10.9912 15.9162 9.86733C17.0399 8.74362 17.6096 7.36868 17.6096 5.78025C17.6096 4.19237 17.0399 2.81725 15.916 1.69317C14.7921 0.569639 13.417 0 11.829 0C10.2405 0 8.86559 0.569639 7.74188 1.69335C6.61816 2.81707 6.04834 4.19218 6.04834 5.78025C6.04834 7.36868 6.61816 8.7438 7.74206 9.86751C8.86596 10.991 10.2411 11.5609 11.829 11.5609Z" fill="#0767AB"/>
+                        <path d="M21.9435 18.4556C21.9111 17.988 21.8455 17.4778 21.749 16.9391C21.6516 16.3964 21.5262 15.8833 21.376 15.4144C21.2209 14.9297 21.01 14.4511 20.7493 13.9924C20.4786 13.5163 20.1608 13.1018 19.8041 12.7607C19.4311 12.4038 18.9744 12.1169 18.4463 11.9076C17.9201 11.6994 17.3369 11.5939 16.7131 11.5939C16.4681 11.5939 16.2311 11.6945 15.7736 11.9924C15.492 12.176 15.1625 12.3884 14.7949 12.6233C14.4805 12.8237 14.0546 13.0113 13.5285 13.1813C13.0153 13.3473 12.4942 13.4316 11.9798 13.4316C11.4655 13.4316 10.9445 13.3473 10.4308 13.1813C9.90524 13.0115 9.47934 12.8238 9.16532 12.6235C8.80112 12.3908 8.47153 12.1784 8.18571 11.9922C7.72868 11.6943 7.49156 11.5938 7.24656 11.5938C6.62254 11.5938 6.03954 11.6994 5.51347 11.9078C4.98577 12.1167 4.52892 12.4036 4.15557 12.7609C3.79907 13.1022 3.48101 13.5165 3.21075 13.9924C2.95019 14.4511 2.73925 14.9296 2.58398 15.4146C2.43402 15.8835 2.30859 16.3964 2.21118 16.9391C2.11468 17.4771 2.04913 17.9874 2.01672 18.4561C1.98486 18.9154 1.96875 19.392 1.96875 19.8734C1.96875 21.1262 2.367 22.1404 3.15234 22.8884C3.92797 23.6265 4.95427 24.0009 6.20231 24.0009H17.7584C19.0065 24.0009 20.0324 23.6267 20.8082 22.8884C21.5937 22.1409 21.992 21.1265 21.992 19.8732C21.9918 19.3896 21.9755 18.9126 21.9435 18.4556Z" fill="#0767AB"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="23.9999" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+               </span>
+                <a href="m6_03_Manage Super Sub Admins Details.html"><b>Manage Super Sub Ad... 
+                </b></a>
+ 
+            </li>
+           
+            
+            <li >
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0)">
+                        <path d="M11.829 11.5609C13.4172 11.5609 14.7925 10.9912 15.9162 9.86733C17.0399 8.74362 17.6096 7.36868 17.6096 5.78025C17.6096 4.19237 17.0399 2.81725 15.916 1.69317C14.7921 0.569639 13.417 0 11.829 0C10.2405 0 8.86559 0.569639 7.74188 1.69335C6.61816 2.81707 6.04834 4.19218 6.04834 5.78025C6.04834 7.36868 6.61816 8.7438 7.74206 9.86751C8.86596 10.991 10.2411 11.5609 11.829 11.5609Z" fill="#0767AB"/>
+                        <path d="M21.9435 18.4556C21.9111 17.988 21.8455 17.4778 21.749 16.9391C21.6516 16.3964 21.5262 15.8833 21.376 15.4144C21.2209 14.9297 21.01 14.4511 20.7493 13.9924C20.4786 13.5163 20.1608 13.1018 19.8041 12.7607C19.4311 12.4038 18.9744 12.1169 18.4463 11.9076C17.9201 11.6994 17.3369 11.5939 16.7131 11.5939C16.4681 11.5939 16.2311 11.6945 15.7736 11.9924C15.492 12.176 15.1625 12.3884 14.7949 12.6233C14.4805 12.8237 14.0546 13.0113 13.5285 13.1813C13.0153 13.3473 12.4942 13.4316 11.9798 13.4316C11.4655 13.4316 10.9445 13.3473 10.4308 13.1813C9.90524 13.0115 9.47934 12.8238 9.16532 12.6235C8.80112 12.3908 8.47153 12.1784 8.18571 11.9922C7.72868 11.6943 7.49156 11.5938 7.24656 11.5938C6.62254 11.5938 6.03954 11.6994 5.51347 11.9078C4.98577 12.1167 4.52892 12.4036 4.15557 12.7609C3.79907 13.1022 3.48101 13.5165 3.21075 13.9924C2.95019 14.4511 2.73925 14.9296 2.58398 15.4146C2.43402 15.8835 2.30859 16.3964 2.21118 16.9391C2.11468 17.4771 2.04913 17.9874 2.01672 18.4561C1.98486 18.9154 1.96875 19.392 1.96875 19.8734C1.96875 21.1262 2.367 22.1404 3.15234 22.8884C3.92797 23.6265 4.95427 24.0009 6.20231 24.0009H17.7584C19.0065 24.0009 20.0324 23.6267 20.8082 22.8884C21.5937 22.1409 21.992 21.1265 21.992 19.8732C21.9918 19.3896 21.9755 18.9126 21.9435 18.4556Z" fill="#0767AB"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="23.9999" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+               </span>
+                <a href="m6_03a_Manage Admins List.html"><b>Manage Sub Admins
+            
+                </b></a>
+             
+            </li>
+            
+             
+             <li>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 6.375C3.312 6.375 1.125 8.562 1.125 11.25C1.125 13.938 3.312 16.125 6 16.125C8.688 16.125 10.875 13.938 10.875 11.25C10.875 8.562 8.688 6.375 6 6.375ZM6 15.375C3.72563 15.375 1.875 13.5244 1.875 11.25C1.875 8.97563 3.72563 7.125 6 7.125C8.27437 7.125 10.125 8.97563 10.125 11.25C10.125 13.5244 8.27437 15.375 6 15.375Z" fill="#298ED4"/>
+                        <path d="M16.5 21.375H16.125V22.125H15.375V21.375H14.625V22.125H13.875V21.375H13.125V22.125H12.375V21.375H11.625V22.125H10.875V21.375H10.5C10.2934 21.375 10.125 21.543 10.125 21.75V22.5C10.125 22.707 10.2934 22.875 10.5 22.875H16.5C16.7066 22.875 16.875 22.707 16.875 22.5V21.75C16.875 21.543 16.7066 21.375 16.5 21.375Z" fill="#298ED4"/>
+                        <path d="M6 7.875C4.13925 7.875 2.625 9.38925 2.625 11.25C2.625 13.1111 4.13925 14.625 6 14.625C7.86075 14.625 9.375 13.1111 9.375 11.25C9.375 9.38925 7.86075 7.875 6 7.875ZM5.625 10.875H6.375C6.99525 10.875 7.5 11.3798 7.5 12V13.125H6.375V13.875H5.625V13.125C5.00475 13.125 4.5 12.6203 4.5 12H5.25C5.25 12.2066 5.41838 12.375 5.625 12.375H6.75V12C6.75 11.7934 6.58162 11.625 6.375 11.625H5.625C5.00475 11.625 4.5 11.1202 4.5 10.5V9.375H5.625V8.625H6.375V9.375C6.99525 9.375 7.5 9.87975 7.5 10.5H6.75C6.75 10.2934 6.58162 10.125 6.375 10.125H5.25V10.5C5.25 10.7066 5.41838 10.875 5.625 10.875Z" fill="#298ED4"/>
+                        <path d="M9 16.875H8.625V17.625H7.875V16.875H7.125V17.625H6.375V16.875H5.625V17.625H4.875V16.875H4.125V17.625H3.375V16.875H3C2.79338 16.875 2.625 17.043 2.625 17.25V18C2.625 18.207 2.79338 18.375 3 18.375H9C9.20662 18.375 9.375 18.207 9.375 18V17.25C9.375 17.043 9.20662 16.875 9 16.875Z" fill="#298ED4"/>
+                        <path d="M11.6249 11.25C11.6249 12.0983 11.4307 12.9004 11.0932 13.6222C12.3918 14.7506 14.032 15.375 15.7499 15.375C19.6788 15.375 22.8749 12.1789 22.8749 8.25C22.8749 4.32113 19.6788 1.125 15.7499 1.125C12.4855 1.125 9.69929 3.29175 8.87354 6.42338C10.5179 7.40625 11.6249 9.19913 11.6249 11.25ZM15.7499 14.625V13.875C15.9854 13.875 16.222 13.8604 16.4534 13.8315L16.5464 14.5755C16.2847 14.6085 16.0165 14.625 15.7499 14.625ZM16.1249 10.125C16.1249 9.29775 16.7977 8.625 17.6249 8.625C18.4522 8.625 19.1249 9.29775 19.1249 10.125C19.1249 10.9523 18.4522 11.625 17.6249 11.625C16.7977 11.625 16.1249 10.9523 16.1249 10.125ZM17.3437 14.4244L17.1565 13.6976C17.3954 13.6361 17.6317 13.5581 17.8593 13.4662L18.1409 14.1615C17.8825 14.2661 17.6144 14.3542 17.3437 14.4244ZM21.3749 8.25H22.1249C22.1249 10.5188 20.9039 12.6345 18.9378 13.7719L18.562 13.1231C20.2972 12.1189 21.3749 10.2517 21.3749 8.25ZM19.2348 4.23488L19.765 4.76512L12.265 12.2651L11.7348 11.7349L19.2348 4.23488ZM15.7499 1.875V2.625C15.5144 2.625 15.2778 2.63963 15.0464 2.6685L14.9534 1.9245C15.2152 1.8915 15.4833 1.875 15.7499 1.875ZM15.3749 6.375C15.3749 7.20225 14.7022 7.875 13.8749 7.875C13.0477 7.875 12.3749 7.20225 12.3749 6.375C12.3749 5.54775 13.0477 4.875 13.8749 4.875C14.7022 4.875 15.3749 5.54775 15.3749 6.375ZM14.1562 2.076L14.3433 2.80238C12.6247 3.24487 11.2008 4.49287 10.5333 6.141L9.83804 5.85975C10.5944 3.99188 12.2088 2.57737 14.1562 2.076Z" fill="#298ED4"/>
+                        <path d="M13.875 7.125C14.2892 7.125 14.625 6.78921 14.625 6.375C14.625 5.96079 14.2892 5.625 13.875 5.625C13.4608 5.625 13.125 5.96079 13.125 6.375C13.125 6.78921 13.4608 7.125 13.875 7.125Z" fill="#298ED4"/>
+                        <path d="M17.625 10.875C18.0392 10.875 18.375 10.5392 18.375 10.125C18.375 9.71079 18.0392 9.375 17.625 9.375C17.2108 9.375 16.875 9.71079 16.875 10.125C16.875 10.5392 17.2108 10.875 17.625 10.875Z" fill="#298ED4"/>
+                        <path d="M9 19.125H8.625V19.875H7.875V19.125H7.125V19.875H6.375V19.125H5.625V19.875H4.875V19.125H4.125V19.875H3.375V19.125H3C2.79338 19.125 2.625 19.293 2.625 19.5V20.25C2.625 20.457 2.79338 20.625 3 20.625H9C9.20662 20.625 9.375 20.457 9.375 20.25V19.5C9.375 19.293 9.20662 19.125 9 19.125Z" fill="#298ED4"/>
+                        <path d="M9 21.375H8.625V22.125H7.875V21.375H7.125V22.125H6.375V21.375H5.625V22.125H4.875V21.375H4.125V22.125H3.375V21.375H3C2.79338 21.375 2.625 21.543 2.625 21.75V22.5C2.625 22.707 2.79338 22.875 3 22.875H9C9.20662 22.875 9.375 22.707 9.375 22.5V21.75C9.375 21.543 9.20662 21.375 9 21.375Z" fill="#298ED4"/>
+                        <path d="M16.875 16.875H22.125V17.625H16.875V16.875Z" fill="#298ED4"/>
+                        <path d="M16.875 18.375H22.125V19.125H16.875V18.375Z" fill="#298ED4"/>
+                        <path d="M18.375 19.875H19.125V20.625H18.375V19.875Z" fill="#298ED4"/>
+                        <path d="M19.875 19.875H20.625V20.625H19.875V19.875Z" fill="#298ED4"/>
+                        <path d="M21.375 19.875H22.125V20.625H21.375V19.875Z" fill="#298ED4"/>
+                        </svg>
+               </span>
+                <a href="m6_04a_Comma Charges - Lab Centres.html"><b>Commission Mana...
+                <img class="racp" src="images/right-arrow-c-pro.png"/>
+                <img class="dacp" src="images/down-arrow-c-pro.png"/>
+                </b></a>
+
+                <ul class="side-nav-dropdown" >
+                    <li>
+                        <a  href="#">
+                            <p class="inner-dd-svg"></p>
+                            Lab Centres</a>
+                        <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            Organizations</a>
+                        <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            Universities</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="active opend">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M4.53001 5.45163C5.99768 5.45163 7.18746 4.26185 7.18746 2.79418C7.18746 1.3265 5.99768 0.136719 4.53001 0.136719C3.06234 0.136719 1.87256 1.3265 1.87256 2.79418C1.87256 4.26185 3.06234 5.45163 4.53001 5.45163Z" fill="#298ED4"/>
+                        <path d="M19.4706 0.136719C20.9383 0.136719 22.1278 1.32654 22.1278 2.79418C22.1278 4.26182 20.9383 5.45159 19.4706 5.45159C18.0028 5.45159 16.813 4.26177 16.813 2.79418C16.813 1.32659 18.0028 0.136719 19.4706 0.136719Z" fill="#298ED4"/>
+                        <path d="M21.4646 5.17188C20.9414 5.66039 20.2412 5.96178 19.4704 5.96178C18.6993 5.96178 17.9993 5.66012 17.4762 5.17188C16.3431 5.47096 15.4418 6.34024 15.0957 7.45221C14.1168 7.27178 13.077 7.17399 12.0001 7.17399C10.9231 7.17399 9.88342 7.27178 8.90445 7.45221C8.55843 6.34024 7.6568 5.47096 6.52416 5.17188C6.0007 5.66012 5.30078 5.96151 4.5298 5.96151C3.75895 5.96151 3.05889 5.66012 2.53562 5.17188C1.07865 5.55675 0 6.88215 0 8.45805V11.2163L0.00692213 11.259L0.197188 11.3185C0.790184 11.5037 1.35471 11.6447 1.8945 11.755C1.64571 12.2884 1.5099 12.8498 1.5099 13.4297C1.5099 15.9342 3.99167 18.0984 7.56441 19.0967C7.43252 19.4584 7.35929 19.8479 7.35929 20.2549V23.0131L7.36639 23.0563L7.55652 23.1157C9.34668 23.6749 10.9024 23.8618 12.183 23.8618C14.6836 23.8618 16.1329 23.1485 16.2223 23.1032L16.4002 23.0132H16.419V20.255C16.419 19.8681 16.3535 19.4972 16.2341 19.1511C19.9148 18.1786 22.4902 15.9807 22.4902 13.4297C22.4902 12.8771 22.3681 12.3416 22.1416 11.8313C23.1689 11.6188 23.7477 11.3344 23.8031 11.3062L23.9812 11.2161L24 11.2163V8.45809C24.0003 6.88215 22.9217 5.55675 21.4646 5.17188ZM21.7654 13.4297C21.7654 15.6893 19.3589 17.636 15.9222 18.4934C15.4697 17.7525 14.7439 17.1958 13.8839 16.9691C13.3604 17.4574 12.6602 17.7585 11.8895 17.7585C11.1189 17.7585 10.4186 17.4574 9.89519 16.9691C9.05424 17.1912 8.3408 17.728 7.88666 18.4443C4.55246 17.5632 2.23506 15.647 2.23506 13.4297C2.23506 12.8945 2.3724 12.3776 2.6239 11.888C3.42669 12.0129 4.16232 12.0645 4.82353 12.0645C7.32412 12.0645 8.77362 11.3515 8.86291 11.3062L9.04077 11.216L9.05987 11.2163V8.45782C9.05987 8.35689 9.05507 8.25666 9.0464 8.15804C9.97885 7.98988 10.9709 7.89865 12.0002 7.89865C13.0296 7.89865 14.0219 7.98988 14.9543 8.15804C14.9456 8.25694 14.9406 8.35689 14.9406 8.45809V11.2163L14.9477 11.2593L15.1381 11.3188C16.928 11.8777 18.4838 12.0645 19.7639 12.0645C20.3783 12.0645 20.9279 12.0217 21.4107 11.9557C21.6402 12.4253 21.7654 12.919 21.7654 13.4297Z" fill="#298ED4"/>
+                        <path d="M11.8897 17.2482C13.3573 17.2482 14.547 16.0585 14.547 14.5909C14.547 13.1233 13.3573 11.9336 11.8897 11.9336C10.4221 11.9336 9.23242 13.1233 9.23242 14.5909C9.23242 16.0585 10.4221 17.2482 11.8897 17.2482Z" fill="#298ED4"/>
+                        </svg>
+               </span>
+                <a href="m6_05a_Manage Users - Researchers.html"><b>Manage Users
+                <img class="racp" src="images/right-arrow-c-pro.png"/>
+                <img class="dacp" src="images/down-arrow-c-pro.png"/>
+                </b></a>
+
+                <ul class="side-nav-dropdown" style="display: block;">
+                    <li>
+                        <a class="active" href="#">
+                            <p class="inner-dd-svg"></p>
+                            Researchers</a>
+                        <a href="#">
+                            <p class="inner-dd-svg"></p>
+                            Organizations</a>
+                    </li>
+                </ul>
+            </li>
+            
+     
+            <li>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM12 21.8906C6.54628 21.8906 2.10938 17.4537 2.10938 12C2.10938 6.54628 6.54628 2.10938 12 2.10938C17.4537 2.10938 21.8906 6.54628 21.8906 12C21.8906 17.4537 17.4537 21.8906 12 21.8906Z" fill="#298ED4"/>
+                        <path d="M12 3.51562C7.32169 3.51562 3.51562 7.32169 3.51562 12C3.51562 16.6783 7.32169 20.4844 12 20.4844C16.6783 20.4844 20.4844 16.6783 20.4844 12C20.4844 7.32169 16.6783 3.51562 12 3.51562ZM12.7031 12.2912L7.98938 17.005L6.99502 16.0106L11.2969 11.7088V5.625H12.7031V12.2912Z" fill="#298ED4"/>
+                        </svg>
+               </span>
+                <a href="m6_06a_Settings.html"><b>Set Time Frame</b></a>
+            </li>
+            
+            <li>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0)">
+                        <path d="M22.4039 12.311C22.3074 12.1134 22.3074 11.8868 22.4039 11.6893L23.299 9.85809C23.7974 8.83852 23.4025 7.62329 22.4001 7.0914L20.5996 6.13609C20.4054 6.03306 20.2722 5.84969 20.2342 5.63317L19.8821 3.62557C19.686 2.5078 18.652 1.75667 17.5286 1.91563L15.5105 2.20109C15.2927 2.23184 15.0773 2.16181 14.9193 2.00895L13.4544 0.591835C12.6387 -0.197255 11.3609 -0.197302 10.5453 0.591835L9.08035 2.00909C8.92229 2.162 8.7069 2.23189 8.48912 2.20123L6.47102 1.91577C5.3472 1.75672 4.31361 2.50794 4.11753 3.62571L3.76541 5.63322C3.7274 5.84978 3.59422 6.03311 3.40002 6.13619L1.59956 7.09149C0.597101 7.62333 0.202228 8.83866 0.700601 9.85823L1.59567 11.6893C1.69224 11.8869 1.69224 12.1135 1.59567 12.311L0.700554 14.1422C0.202182 15.1617 0.597054 16.377 1.59952 16.9089L3.39998 17.8642C3.59422 17.9672 3.7274 18.1506 3.76541 18.3671L4.11753 20.3747C4.29603 21.3922 5.16856 22.1059 6.17135 22.1058C6.27011 22.1058 6.37033 22.0988 6.47107 22.0846L8.48916 21.7991C8.7068 21.7682 8.92233 21.8384 9.08039 21.9913L10.5453 23.4084C10.9532 23.803 11.4764 24.0002 11.9998 24.0002C12.5231 24.0001 13.0466 23.8029 13.4543 23.4084L14.9193 21.9913C15.0773 21.8384 15.2927 21.7686 15.5105 21.7991L17.5286 22.0846C18.6525 22.2436 19.686 21.4924 19.8821 20.3746L20.2342 18.3671C20.2722 18.1506 20.4054 17.9672 20.5996 17.8642L22.4001 16.9089C23.4025 16.377 23.7974 15.1617 23.299 14.1421L22.4039 12.311ZM9.23133 5.77112C10.6306 5.77112 11.7691 6.90957 11.7691 8.30888C11.7691 9.70819 10.6306 10.8466 9.23133 10.8466C7.83203 10.8466 6.69358 9.70819 6.69358 8.30888C6.69358 6.90957 7.83203 5.77112 9.23133 5.77112ZM7.92146 17.0572C7.78632 17.1923 7.60919 17.2599 7.43209 17.2599C7.255 17.2599 7.07781 17.1924 6.94272 17.0572C6.67244 16.7869 6.67244 16.3487 6.94272 16.0784L16.0781 6.94299C16.3483 6.67271 16.7866 6.67271 17.0569 6.94299C17.3272 7.21327 17.3272 7.65151 17.0569 7.92179L7.92146 17.0572ZM14.7682 18.2291C13.3689 18.2291 12.2304 17.0907 12.2304 15.6914C12.2304 14.2921 13.3689 13.1536 14.7682 13.1536C16.1675 13.1536 17.3059 14.2921 17.3059 15.6914C17.3059 17.0907 16.1675 18.2291 14.7682 18.2291Z" fill="#298ED4"/>
+                        <path d="M14.7683 14.5391C14.1322 14.5391 13.6147 15.0565 13.6147 15.6926C13.6147 16.3286 14.1322 16.846 14.7683 16.846C15.4043 16.846 15.9218 16.3286 15.9218 15.6926C15.9218 15.0565 15.4043 14.5391 14.7683 14.5391Z" fill="#298ED4"/>
+                        <path d="M9.23162 7.15625C8.59558 7.15625 8.07812 7.6737 8.07812 8.30974C8.07812 8.94579 8.59558 9.46328 9.23162 9.46328C9.86766 9.46328 10.3852 8.94583 10.3852 8.30974C10.3851 7.67375 9.86766 7.15625 9.23162 7.15625Z" fill="#298ED4"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+               </span>
+                <a href="m6_07_Researcher_Active_Free_Trial.html"><b>Set Free Registration</b></a>
+            </li>
+            
+
+        </ul>
+
+        <div class="menu-footer m-foot-m5">
+            <p>Copyrights © 2019 Comma Pro</p>
+        </div>
+    </aside>
+    <section id="contents">
+        <nav class="navbar navbar-default nav-mod-5">
+            <div class="container-fluid c-pro-header">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <i class="fa fa-align-right"></i>
+               </button>
+                    <a class="navbar-brand" href="#">
+                        <!-- <img src="images/universities/university.png" /> -->
+                        <span class="main-color">Manage Users</span></a>
+                    <b>
+                  <!-- <img src="images/question-pic.png"/> -->
+                  <a class="menu-toggled" href="#"><i data-show="show-side-navigation1" class="fa fa-bars show-side-btn"></i></a></b>
+                </div>
+                <div class="header-msg">
+                    <span><img src="images/chat.png"/><a href="messages.html">Messages</a></span>
+                </div>
+                <div class="header-msg header-notify">
+                    <span><img src="images/notification.png"/>Notification
+                       <small class="notify_num">1</small>
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                    <img src="images/m6/profile-log.png" />
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chris Hemsworth
+                     <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Dustin Hoffman</a></li>
+                                <li><a href="#"> Log out</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li><a href="#"><i data-show="show-side-navigation1" class="fa fa-bars show-side-btn"></i></a></li> -->
+                        <span class="admin-drop">Super Admin</span>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="right-wrapper p-0-g">
+            <section class="af_content_route">
+                
+                
+    <div class="col-lg-12 af_inner_tab g-inner-tab">
+               <div class="tab-contentSearch by Name ">
+                    <!--home-->
+                <div id="financial_report_1" class="tab-pane fade in active">
+                  
+                    <h3 class="sub-title manage_top">Manage Researchers - Detail </h3>
+                    <div class="details-jumbotron col-lg-12">
+                        <h1 class="j-details-heading">Basic Details</h1>
+                        <div class="details-sec-m5 col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-xs-12 top-sec-details profile-folio">
+                                    <img src="images/profile_pic.png"/>
+                                     <div class="profile-top-det">
+                                        <p>Chris Hemsworth</p>
+                                        <span>Researcher</span>
+                                     </div>
+                                </div>
+                                <div class="col-lg-6 col-xs-12 top-sec-details top-sec-details-right">
+                                    <label class="col-lg-4 no-padding col-xs-12">Status</label>
+                                    <span class="col-lg-8 star-color no-padding col-xs-12"><span class="active_green BL_inactive_green ">Inactive</span></span>
+                                </div>
+                                <div class="col-lg-6 col-xs-12 top-sec-details normal-det c-bo">
+                                    <label class="col-lg-4 no-padding col-xs-12">Email Address</label>
+                                    <span class="col-lg-8 no-padding col-xs-12">streamlaboratory088@gmail.com</span>
+                                </div>
+                                <div class="col-lg-6 col-xs-12 top-sec-details normal-det">
+                                    <label class="col-lg-4 no-padding col-xs-12">Contact Number</label>
+                                    <span class="col-lg-8 no-padding col-xs-12">+91 9876 21 0321</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h1 class="j-details-heading">Additional Details</h1>
+                        <div class="details-sec-m5 col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-xs-12 top-sec-details normal-det">
+                                    <label class="col-lg-4 no-padding col-xs-12">Country</label>
+                                    <span class="col-lg-8 no-padding col-xs-12">Dubai</span>
+                                </div>
+                                <div class="col-lg-6 col-xs-12 top-sec-details normal-det">
+                                    <label class="col-lg-4 no-padding col-xs-12">City</label>
+                                    <span class="col-lg-8 no-padding col-xs-12">Viderno</span>
+                                </div>
+                                <div class="col-lg-6 col-xs-12 top-sec-details normal-det ">
+                                    <label class="col-lg-4 no-padding col-xs-12">Website Link</label>
+                                    <span class="col-lg-8 no-padding col-xs-12">https://www.commapro.com</span>
+                                </div>
+                                <div class="col-lg-6 col-xs-12 top-sec-details normal-det">
+                                    <label class="col-lg-4 no-padding col-xs-12">Social Media Link</label>
+                                    <span class="col-lg-8 no-padding col-xs-12">https://www.commapro.com/Facebook</span>
+                                </div>
+
+                                <div class="col-lg-6 col-xs-12 top-sec-details normal-det">
+                                    <label class="col-lg-4 no-padding col-xs-12"> Social Media Link</label>
+                                    <span class="col-lg-8 no-padding col-xs-12"> 30</span>
+                                </div>
+                                <div class="col-lg-6 col-xs-12 top-sec-details normal-det">
+                                    <label class="col-lg-4 no-padding col-xs-12">Active Hours</label>
+                                    <span class="col-lg-8 no-padding col-xs-12">50 days</span>
+                                </div>
+                                <div class="col-lg-6 col-xs-12 top-sec-details normal-det">
+                                    <label class="col-lg-4 no-padding col-xs-12">Inactivity Hours</label>
+                                    <span class="col-lg-8 no-padding col-xs-12">10 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                      
+
+                        <div class="cerv_button">
+                            <button class="activate_research">activate researcher</button>
+                        </div>
+  
+                    </div>
+
+                
+ 
+                </div>                
+               </div>
+              </div>
+                              
+
+                </div>
+            </section>
+        </div>
+        <script src='http://code.jquery.com/jquery-latest.js'></script>
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script> -->
+        <script src='js/main.js'></script>
+        <script>
+            /*global $, console*/
+            /*
+            By Mostafa Omar
+            https://www.facebook.com/MostafaOmarIbrahiem
+            */
+            $(function() {
+
+                'use strict';
+
+                (function() {
+
+                    var aside = $('.side-nav'),
+
+                        showAsideBtn = $('.show-side-btn'),
+
+                        contents = $('#contents');
+
+                    showAsideBtn.on("click", function() {
+
+                        $("#" + $(this).data('show')).toggleClass('show-side-nav');
+
+                        contents.toggleClass('margin');
+
+                    });
+
+                    if ($(window).width() <= 767) {
+
+                        aside.addClass('show-side-nav');
+
+                    }
+                    $(window).on('resize', function() {
+
+                        if ($(window).width() > 767) {
+
+                            aside.removeClass('show-side-nav');
+
+                        }
+
+                    });
+
+                    // dropdown menu in the side nav
+                    var slideNavDropdown = $('.side-nav-dropdown');
+
+                    $('.side-nav .categories li').on('click', function() {
+
+                        $(this).toggleClass('opend').siblings().removeClass('opend');
+
+                        if ($(this).hasClass('opend')) {
+
+                            $(this).find('.side-nav-dropdown').slideToggle('fast');
+
+                            $(this).siblings().find('.side-nav-dropdown').slideUp('fast');
+
+                        } else {
+
+                            $(this).find('.side-nav-dropdown').slideUp('fast');
+
+                        }
+
+                    });
+
+                    $('.side-nav .close-aside').on('click', function() {
+
+                        $('#' + $(this).data('close')).addClass('show-side-nav');
+
+                        contents.removeClass('margin');
+
+                    });
+
+                }());
+
+
+
+            });
+        </script>
+		<script>
+$(document).ready(function(){
+  $(".cate-mod-5 .side-nav-dropdown a").click(function(){
+	$(".cate-mod-5 .side-nav-dropdown a").addClass("inner-active");
+  });
+});
+
+var jQliList = $('ul.steps li');
+jQliList.on('click', function(){
+  jQliList.removeClass('active');
+  $(this).addClass('active');
+});
+</script>
+</body>
+
+</html>
